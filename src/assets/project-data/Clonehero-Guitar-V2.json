@@ -10,19 +10,19 @@
   "what_i_learned": "This project provided numerous learning opportunities. While I started with some basic soldering skills, I refined and expanded my knowledge significantly as the project progressed. I also ventured into 3D modeling, modifying a part of the guitar to accommodate a power switch for the board. Additionally, I learned how to wire and program an LED strip to display specific colors, enhancing the controller’s functionality and aesthetic. Overall, this project deepened my understanding of both hardware and software, as well as the process of integrating them to create a fully functioning, cohesive system.",
   "challenges": "One of the biggest challenges I am currently facing is trying to lean how rechargeable batteries work with being wired to a charger and to the micro controller. I can not get the battery to charge through the charger and the battery will not power the board even with the battery having full charge when tested with a multi meter. I plan to do more research on batteries to find a proper one with a charger to power this guitar.",
   "What_was_not_completed": "",
-  "cover_image": "/assets/project-images/Clonehero-Guitar-V2-Images/Image1.JPEG",
+  "cover_image": "assets/project-images/Clonehero-Guitar-V2-Images/Image1.JPEG",
   "images": [
     {
       "title": "",
-      "path":"/assets/project-images/Clonehero-Guitar-V2-Images/Image1.JPEG"
+      "path":"assets/project-images/Clonehero-Guitar-V2-Images/Image1.JPEG"
     },
     {
       "title": "",
-      "path":"/assets/project-images/Clonehero-Guitar-V2-Images/Image2.JPEG"
+      "path":"assets/project-images/Clonehero-Guitar-V2-Images/Image2.JPEG"
     },
     {
       "title": "Guitar Interior",
-      "path":"/assets/project-images/Clonehero-Guitar-V2-Images/Image3.JPEG"
+      "path":"assets/project-images/Clonehero-Guitar-V2-Images/Image3.JPEG"
     }
   ],
   "resources": {

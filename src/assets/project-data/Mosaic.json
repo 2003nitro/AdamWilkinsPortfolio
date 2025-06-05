@@ -10,11 +10,11 @@
   "what_i_learned": "I learned a lot on the lifecycle of software's and the different roles that go into development. Being the product owner i learned how to communicate the products requirements effectively with the team. When i was the scrum master i was able to assign tasks and assist the team where needed. Being a developer or tester i was able to complete the tasks that were assigned to me within a reasonable time. Lastly thought out this project i was able to gain the knowledge of how a project management software works and the importance of keeping it updated and how to create, assign, test, and complete issues.",
   "challenges": "",
   "What_was_not_completed": "We didnt get to complete the ability for the user to pay or add in any addresses which also doesnt have the suggested companies that are in a specific area. We were able to complete a sign in function and build an app that shows what the future of it could look like. This project was not completed as it was a class project and the group moved away into other classes afterwards.",
-  "cover_image": "/assets/project-images/Mosaic-Images/Image1.png",
+  "cover_image": "assets/project-images/Mosaic-Images/Image1.png",
   "images": [
     {
       "title": "Application Walkthough",
-      "path":"/assets/project-images/Mosaic-Images/Video1.mp4"
+      "path":"assets/project-images/Mosaic-Images/Video1.mp4"
     }
   ],
   "resources": {

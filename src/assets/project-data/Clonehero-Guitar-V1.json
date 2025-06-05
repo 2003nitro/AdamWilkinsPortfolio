@@ -10,11 +10,11 @@
   "what_i_learned": "Through this project, I gained valuable insights into wiring switches and buttons to an Arduino and understanding how to read their inputs effectively. I also delved into simulating keyboard inputs using the USB Keyboard HID protocol, allowing the controller to interact seamlessly with a computer. Additionally, I explored various 3D printing techniques, learning about different types and levels of infill. This experimentation revealed how infill patterns can create unique visual effects, particularly when using clear filament to produce intricate designs.",
   "challenges": "",
   "What_was_not_completed": "",
-  "cover_image": "/assets/project-images/Clonehero-Guitar-V1-Images/Image1.JPEG",
+  "cover_image": "assets/project-images/Clonehero-Guitar-V1-Images/Image1.JPEG",
   "images":[
     {
       "title": "",
-      "path":"/assets/project-images/Clonehero-Guitar-V1-Images/Image1.JPEG"
+      "path":"assets/project-images/Clonehero-Guitar-V1-Images/Image1.JPEG"
     }
   ],
   "resources": {

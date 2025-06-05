@@ -1,0 +1,18 @@
+Tags:
+    • 3d Modeling
+    • 3d Printing
+    • Embeded Systems
+    • Machine Learning
+    • Mobile Development
+    • Arduino
+    • Software
+
+    • JavaScript
+    • TypeScript
+    • Python
+    • HTML
+    • CSS
+    • SQL
+    • C++
+    • C#
+    • Kotlin
