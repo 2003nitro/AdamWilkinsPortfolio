@@ -1,0 +1,89 @@
+/**************************************************************
+File: home.component.css
+Author: Adam Wilkins
+Last Updated: 6/1/2025
+Last to Update: Adam Wilkins
+***************************************************************/
+:host {
+  display: block;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding-bottom: 3rem;
+}
+
+
+.profile {
+  width: 90%;
+  margin: 2rem auto;
+  border-collapse: collapse;
+}
+
+.media-container,
+.info-container {
+  width: 50%;
+  vertical-align: middle;
+  padding: 1.5rem;
+}
+
+.media {
+  display: block;
+  margin: 0 auto;
+  max-width: 100%;
+  max-height: 50vh;
+  border: 2px solid #ddd;
+  object-fit: contain;
+}
+
+.name {
+  margin: 0 0 0.5rem;
+  font-size: 2rem;
+  line-height: 1.2;
+  color: #bebebe;
+}
+
+.aboutMe {
+  margin: 0;
+  line-height: 1.5;
+  font-size: 1rem;
+  color: #818181;
+}
+
+.button {
+  background-color: #bebebe;
+  border: none;
+  color: #121212;
+  padding: 0.5rem 1rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+  margin: 1rem 0;
+  cursor: pointer;
+}
+
+@media (max-width: 768px) {
+  .profile {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .media-container,
+  .info-container {
+    display: block;
+    width: 100%;
+    padding: 1rem;
+    box-sizing: border-box;
+  }
+
+  .info-container {
+    text-align: center;
+  }
+
+  .media {
+    max-width: 100%;
+    max-height: none;
+    height: auto;
+  }
+}

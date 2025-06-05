@@ -1,0 +1,234 @@
+<!-- ************************************************************************* -->
+<!--
+File: project-temp.component.html
+Author: Adam Wilkins
+Last Updated: 6/2/2025
+Last to Update: Adam Wilkins
+-->
+<!-- ************************************************************************* -->
+
+<!-- ************************************************************************* -->
+<div *ngIf="ProjectData; else loading">
+
+  <div class="wrapper">
+
+    <div class="main">
+
+      <div class="content-wrapper">
+
+        <!-- ************************************************************************* -->
+         <!-- Project Title-->
+        <h1 class="text">{{ ProjectData.name }}</h1>
+        <!-- ************************************************************************* -->
+
+        <!-- ************************************************************************* -->
+         <!-- Project Dates -->
+        <p class="text meta">
+          {{ ProjectData.start_date }} – {{ ProjectData.end_date || 'Present' }}
+        </p>
+        <!-- ************************************************************************* -->
+
+        <!-- ************************************************************************* -->
+         <!-- Project Status -->
+        <p class="text status" *ngIf="ProjectData.status && ProjectData.status !== ''">
+          {{ ProjectData.status }}
+        </p>
+        <!-- ************************************************************************* -->
+
+        <!-- ************************************************************************* -->
+         <!-- Project Revisited information section -->
+        <section
+          class="section-block"
+          *ngIf="(ProjectData.revisited_date && ProjectData.revisited_date !== '') ||
+                 (ProjectData.revisited_desctiption && ProjectData.revisited_desctiption !== '')"
+        >
+          <h2 class="text">Revisited</h2>
+
+          <p class="text"
+             *ngIf="ProjectData.revisited_date && ProjectData.revisited_date !== ''">
+            <strong>Date:</strong> {{ ProjectData.revisited_date }}
+          </p>
+
+          <p class="text"
+             *ngIf="ProjectData.revisited_desctiption && ProjectData.revisited_desctiption !== ''">
+            <strong>Description:</strong> {{ ProjectData.revisited_desctiption }}
+          </p>
+
+        </section>
+        <!-- ************************************************************************* -->
+
+        <!-- ************************************************************************* -->
+         <!-- Project Overview -->
+        <section class="section-block" *ngIf="ProjectData.overview && ProjectData.overview !== ''">
+
+          <h2 class="text">Overview</h2>
+
+          <p class="text">{{ ProjectData.overview }}</p>
+
+        </section>
+        <!-- ************************************************************************* -->
+
+        <!-- ************************************************************************* -->
+         <!-- Image Carousel -->
+        <section class="section-block" *ngIf="ProjectData.images?.length">
+
+          <h2 class="text">Gallery</h2>
+  
+          <!-- ************************************************************************* -->
+           <!-- Carousel slides-->
+          <div class="carousel">
+
+            <div
+              class="slides"
+              [style.transform]="'translateX(-' + (current * 100) + '%)'"
+            >
+              <!-- ************************************************************************* -->
+               <!-- Image for the slide -->
+              <div
+                class="slide"
+                *ngFor="let img of ProjectData.images; let i = index"
+              >
+
+                <!-- ************************************************************************* -->
+                 <!-- Adds a video or image -->
+                <div class="media-container">
+                  <ng-container *ngIf="isVideo(img.path); else showImage">
+                    <video
+                      [src]="img.path"
+                      controls
+                      preload="metadata"
+                    ></video>
+                  </ng-container>
+                  <ng-template #showImage>
+                    <img [src]="img.path" alt="Slide {{ i + 1 }}" />
+                  </ng-template>
+                </div>
+                <!-- ************************************************************************* -->
+
+                <!-- ************************************************************************* -->
+                 <!-- Adds a caption if there is one --> 
+                <p class="image-title" *ngIf="img.title && img.title !== ''">
+                  {{ img.title }}
+                </p>
+                <!-- ************************************************************************* -->
+
+              </div>
+              <!-- ************************************************************************* -->
+
+            </div>
+          </div>
+          <!-- ************************************************************************* -->
+
+          <!-- ************************************************************************* -->
+           <!-- Adds dots below the image carousel -->
+          <div class="dots" *ngIf="ProjectData.images.length > 1">
+            <button
+              class="dot"
+              *ngFor="let _ of ProjectData.images; let i = index"
+              [class.active]="i === current"
+              (click)="select(i)"
+            ></button>
+          </div>
+          <!-- ************************************************************************* -->
+        </section>
+        <!-- ************************************************************************* -->
+
+
+
+        <!-- ************************************************************************* -->
+         <!-- What I Learned Section -->
+        <section class="section-block" *ngIf="ProjectData.what_i_learned && ProjectData.what_i_learned !== ''">
+
+          <h2 class="text">What I Learned</h2>
+
+          <p class="text">{{ ProjectData.what_i_learned }}</p>
+
+        </section>
+        <!-- ************************************************************************* -->
+
+        <!-- ************************************************************************* -->
+         <!-- Description Section -->
+        <section class="section-block" *ngIf="ProjectData.description && ProjectData.description !== ''">
+
+          <h2 class="text">Description</h2>
+
+          <p class="text">{{ ProjectData.description }}</p>
+
+        </section>
+        <!-- ************************************************************************* -->
+
+        <!-- ************************************************************************* -->
+         <!-- What Was Not Completed Section -->
+        <section
+          class="section-block"
+          *ngIf="ProjectData.What_was_not_completed && ProjectData.What_was_not_completed !== ''"
+          >
+
+          <h2 class="text">What Was Not Completed</h2>
+
+          <p class="text">{{ ProjectData.What_was_not_completed }}</p>
+
+        </section>
+        <!-- ************************************************************************* -->
+
+        <!-- ************************************************************************* -->
+         <!-- Challenges Section -->
+        <section
+          class="section-block"
+          *ngIf="ProjectData.challenges && ProjectData.challenges !== ''"
+          >
+
+          <h2 class="text">Challenges</h2>
+
+          <p class="text">{{ ProjectData.challenges }}</p>
+
+        </section>
+        <!-- ************************************************************************* -->
+
+        <!-- ************************************************************************* -->
+         <!-- Lessons Learned Section -->
+        <section class="section-block" *ngIf="ProjectData.resources">
+
+          <h2 class="text">Resources</h2>
+
+          <ul class="resources-grid">
+
+            <li *ngFor="let resource of ProjectData.resources | keyvalue">
+              <a
+                [href]="resource.value"
+                target="_blank"
+                rel="noopener noreferrer"
+                class="text"
+              >
+                {{ resource.key }}
+              </a>
+            </li>
+
+          </ul>
+
+        </section>
+        <!-- ************************************************************************* -->
+
+        <!-- ************************************************************************* -->
+         <!-- Tags Section -->
+        <section class="section-block" *ngIf="ProjectData.tags?.length">
+          <h2 class="text">Tags</h2>
+          <div class="tags-container">
+            <span class="tag" *ngFor="let tag of ProjectData.tags">
+              {{ tag }}
+            </span>
+          </div>
+        </section>
+        <!-- ************************************************************************* -->
+
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ************************************************************************* -->
+ <!-- Loading Text -->
+<ng-template #loading>
+  <div class="loading-text">Loading...</div>
+</ng-template>
+<!-- ************************************************************************* -->

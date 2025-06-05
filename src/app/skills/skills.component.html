@@ -1,0 +1,124 @@
+<!-- ************************************************************************* -->
+<!--
+File: skills.component.html
+Author: Adam Wilkins
+Last Updated: 6/2/2025
+Last to Update: Adam Wilkins
+-->
+<!-- ************************************************************************* -->
+
+<!-- ************************************************************************* -->
+<div class="skills-page">
+
+  <!-- ************************************************************************* -->
+   <!-- Page header -->
+  <header class="skills-header">
+    <h1>Skills &amp; Experience</h1>
+    <p>
+      An overview of my technical strengths, coursework, and
+      hands-on experience in embedded systems, web development, and more.
+    </p>
+  </header>
+  <!-- ************************************************************************* -->
+
+  <!-- ************************************************************************* -->
+  <section class="skills-grid">
+
+    <!-- ************************************************************************* -->
+    <!-- Programming Languages Card -->
+    <div class="skill-card">
+      <div class="card-header">
+        <h2>Programming Languages</h2>
+      </div>
+      <ul>
+        <li *ngFor="let lang of programmingLanguages">
+          {{ lang }}
+        </li>
+      </ul>
+    </div>
+    <!-- ************************************************************************* -->
+
+    <!-- ************************************************************************* -->
+    <!-- Frameworks & Libraries Card -->
+    <div class="skill-card">
+      <div class="card-header">
+        <h2>Frameworks &amp; Libraries</h2>
+      </div>
+      <ul>
+        <li *ngFor="let fw of frameworksLibraries">
+          {{ fw }}
+        </li>
+      </ul>
+    </div>
+    <!-- ************************************************************************* -->
+
+    <!-- ************************************************************************* -->
+    <!-- Embedded Systems & Hardware Card -->
+    <div class="skill-card">
+      <div class="card-header">
+        <h2>Embedded Systems &amp; Hardware</h2>
+      </div>
+      <ul>
+        <li *ngFor="let hw of embeddedSystems">
+          {{ hw }}
+        </li>
+      </ul>
+    </div>
+    <!-- ************************************************************************* -->
+
+    <!-- ************************************************************************* -->
+    <!-- Tools & Platforms Card -->
+    <div class="skill-card">
+      <div class="card-header">
+        <h2>Tools &amp; Platforms</h2>
+      </div>
+      <ul>
+        <li *ngFor="let tool of toolsPlatforms">
+          {{ tool }}
+        </li>
+      </ul>
+    </div>
+    <!-- ************************************************************************* -->
+
+    <!-- ************************************************************************* -->
+    <!-- Coursework & Education Card -->
+    <div class="skill-card wide-card">
+      <div class="card-header">
+        <h2>Coursework &amp; Education</h2>
+      </div>
+
+      <div class="coursework-columns">
+
+        <ul>
+          <li *ngFor="let course of leftColumn">
+            {{ course }}
+          </li>
+        </ul>
+
+        <ul>
+          <li *ngFor="let course of rightColumn">
+            {{ course }}
+          </li>
+        </ul>
+
+      </div>
+    </div>
+    <!-- ************************************************************************* -->
+
+    <!-- ************************************************************************* -->
+     <!-- Soft Skills & Misc. Card -->
+    <div class="skill-card wide-card">
+      <div class="card-header">
+        <h2>Soft Skills &amp; Misc.</h2>
+      </div>
+      <ul class="soft-skills-list">
+        <li *ngFor="let skill of softSkillsMisc">
+          {{ skill }}
+        </li>
+      </ul>
+    </div>
+    <!-- ************************************************************************* -->
+  </section>
+  <!-- ************************************************************************* -->
+</div>
+<!-- ************************************************************************* -->

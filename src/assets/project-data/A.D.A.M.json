@@ -1,0 +1,30 @@
+{
+  "name": "A.D.A.M",
+  "start_date": "September 3rd 2024",
+  "end_date": "April 22nd 2025",
+  "revisited_date": "",
+  "revisited_desctiption": "",
+  "status": "Completed",
+  "overview": "This project was completed in CS-413 Software Engineering Project 1. I worked in this project with three other group members. Our group originally wanted to make a holographic fan, as we discussed it we started to realize it may be more expensive than we thought to make this. Our project then turned into wanting to make a desktop assistant. As we started to develop the application one of my friends that was not part of the group gave us the idea for the name A.D.A.M which stands for Automated Desktop Assistant Manager which the whole group ended up liking. This project ended up being developed fully in python using OpenAI Whisper. This project was something the whole group was excited about working on that we decided to continue working on it though out the second part of the capstone course to try to make a final project that we can distribute to users.",
+  "description": "This project was designed to be a desktop assistant. It provides a smooth front end that allows the user to view volume levels, brightness levels, and live mic input. The front end has the ability to control brightness, volume, mute mic, make notes, set presets, use the chat box (works the same as voice recognition), and provides a dog photo where the dogs image changes depending on being muted, idle, or listening.",
+  "what_i_learned": "I learned a lot more about the software development lifecycle. I have taken a class in the past on SDL but it allowed me to take what I learned and put it into a practice with my capstone project. I learned a lot more about updating my tasks in the notes section and updating the workspace as each task is completed. I also learned more about working with speech recognition and how to develop it from scratch and the various ways to process the data.",
+  "challenges": "",
+  "What_was_not_completed": "",
+  "cover_image": "/assets/project-images/A.D.A.M-Images/Image1.png",
+  "images": [
+    {
+      "title": "Application Walkthough",
+      "path":"/assets/project-images/A.D.A.M-Images/Video1.mp4"
+    }
+  ],
+  "resources": {
+
+  },
+  "tags": [
+    "Python",
+    "Software",
+    "JavaScript",
+    "HTML",
+    "CSS"
+  ]
+}

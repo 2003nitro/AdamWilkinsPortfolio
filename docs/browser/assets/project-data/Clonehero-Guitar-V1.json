@@ -1,0 +1,29 @@
+{
+  "name": "Clone Hero Guitar Version 1",
+  "start_date": "November 3rd 2024",
+  "end_date": "November 9th 2024",
+  "revisited_date": "",
+  "revisited_desctiption": "",
+  "status": "Completed",
+  "overview": "The Clone Hero Guitar v1 project was inspired by a friend who owned a custom controller. After enjoying the experience of trying out his controller, I decided to take on the challenge of building my own. Through research, I identified a suitable 3D model for the body and sourced the necessary components, including an Arduino Pro Micro and KAILH low-profile switches. I opted to 3D print the body using PLA, dedicating approximately four days to printing, soldering, and programming. The result was a functional and personalized guitar controller that I’m proud to call my own. ",
+  "description": "This project is a custom game controller designed for Clone Hero, a game inspired by Guitar Hero. The controller is configured to output either controller signals or keyboard inputs for each button press, with the default setup using keyboard inputs. While initially designed for Windows systems, it is also compatible with macOS and Linux, provided the Clone Hero game is installed. This versatile design ensures a seamless gaming experience across multiple platforms.",
+  "what_i_learned": "Through this project, I gained valuable insights into wiring switches and buttons to an Arduino and understanding how to read their inputs effectively. I also delved into simulating keyboard inputs using the USB Keyboard HID protocol, allowing the controller to interact seamlessly with a computer. Additionally, I explored various 3D printing techniques, learning about different types and levels of infill. This experimentation revealed how infill patterns can create unique visual effects, particularly when using clear filament to produce intricate designs.",
+  "challenges": "",
+  "What_was_not_completed": "",
+  "cover_image": "/assets/project-images/Clonehero-Guitar-V1-Images/Image1.JPEG",
+  "images":[
+    {
+      "title": "",
+      "path":"/assets/project-images/Clonehero-Guitar-V1-Images/Image1.JPEG"
+    }
+  ],
+  "resources": {
+    "3D Model on Printables": "https://www.printables.com/model/227781-poly-clone-hero-controller"
+  },
+  "tags": [
+    "3d Printing",
+    "Arduino",
+    "Embeded Systems",
+    "C++"
+  ]
+}

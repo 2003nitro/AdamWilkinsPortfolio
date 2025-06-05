@@ -1,0 +1,59 @@
+<!-- ************************************************************************* -->
+<!--
+File: contact.component.html
+Author: Adam Wilkins
+Last Updated: 6/2/2025
+Last to Update: Adam Wilkins
+-->
+<!-- ************************************************************************* -->
+
+<!-- ************************************************************************* -->
+ <!-- Contact Page -->
+<div class="contact-page">
+
+  <!-- ************************************************************************* -->
+   <!-- Contact Card with all information -->
+  <div class="contact-card">
+
+    <h1 class="name">{{ contactName }}</h1>
+
+    <!-- Email -->
+    <div class="contact-item">
+      <span class="icon">📧</span>
+      <a class="contact-link" href="mailto:{{ contactEmail }}">
+        {{ contactEmail }}
+      </a>
+    </div>
+
+    <!-- Phone -->
+    <div class="contact-item">
+      <span class="icon">📞</span>
+      <a class="contact-link" href="{{ phoneLink }}">
+        {{ contactPhone }}
+      </a>
+    </div>
+
+    <!-- Address -->
+    <div class="contact-item">
+      <span class="icon">📍</span>
+      <span class="contact-text">{{ contactAddress }}</span>
+    </div>
+
+    <!-- Social Links -->
+    <div class="social-container">
+      <a
+        *ngFor="let social of socialLinks"
+        class="social-link"
+        [href]="social.href"
+        target="_blank"
+        rel="noopener"
+        [attr.aria-label]="social.label"
+      >
+        <span class="social-icon">{{ social.icon }}</span>
+        <span class="social-label">{{ social.label }}</span>
+      </a>
+    </div>
+  </div>
+  <!-- ************************************************************************* -->
+</div>
+<!-- ************************************************************************* -->

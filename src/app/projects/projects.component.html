@@ -1,0 +1,48 @@
+<!-- ************************************************************************* -->
+<!--
+File: projects.component.html
+Author: Adam Wilkins
+Last Updated: 6/1/2025
+Last to Update: Adam Wilkins
+-->
+<!-- ************************************************************************* -->
+
+
+<!-- ************************************************************************* -->
+ <!-- Page header -->
+<div class="header">
+  <h1>Projects</h1>
+</div>
+<!-- ************************************************************************* -->
+
+<!-- ************************************************************************* -->
+ <!-- Section for all favorite projects -->
+<section class="projects-section">
+
+  <h2 class="section-title">Top Favorite Projects</h2>
+
+  <!-- ************************************************************************* -->
+   <!-- Section for all prject cards in a grid -->
+  <div class="project-grid">
+
+    <!-- ************************************************************************* -->
+     <!-- Make each project a button with a photo and a title -->
+    <button
+      type="button"
+      class="project-card"
+      *ngFor="let project of projects"
+      (click)="openProject(project.path)"
+      [attr.aria-label]="'Open ' + project.name"
+    >
+      <img [src]="project.image" [alt]="project.name" />
+
+      <div class="card-footer">
+        <h3 class="project-title">{{ project.name }}</h3>
+      </div>
+
+    </button>
+    <!-- ************************************************************************* -->
+  </div>
+  <!-- ************************************************************************* -->
+</section>
+<!-- ************************************************************************* -->

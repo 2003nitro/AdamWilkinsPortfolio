@@ -1,0 +1,103 @@
+/**************************************************************
+File: contact.component.css
+Author: Adam Wilkins
+Last Updated: 6/2/2025
+Last to Update: Adam Wilkins
+***************************************************************/
+
+.contact-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  padding: 2rem 2.5rem;
+  max-width: 380px;
+  width: 100%;
+  text-align: center;
+}
+
+.name {
+  margin: 0 0 1rem;
+  font-size: 1.75rem;
+  color: #2d3748;
+  letter-spacing: 0.5px;
+}
+
+.contact-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0.75rem 0;
+}
+
+.icon {
+  font-size: 1.5rem;
+  margin-right: 0.75rem;
+  color: #4a5568;
+}
+
+.contact-link,
+.contact-text {
+  color: #2d3748;
+  font-size: 1rem;
+  text-decoration: none;
+  word-break: break-word;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+.social-container {
+  margin-top: 1.5rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.4rem 0.75rem;
+  background-color: #f0f4f8;
+  border-radius: 6px;
+  text-decoration: none;
+  transition: background-color 0.2s ease, transform 0.2s ease;
+}
+
+.social-link:hover {
+  background-color: #e2e8f0;
+  transform: translateY(-2px);
+}
+
+.social-icon {
+  font-size: 1.4rem;
+}
+
+.social-label {
+  font-size: 0.95rem;
+  color: #2d3748;
+  font-weight: 500;
+}
+
+@media (max-width: 400px) {
+  .social-link {
+    padding: 0.3rem 0.6rem;
+  }
+  .social-icon {
+    font-size: 1.2rem;
+  }
+  .social-label {
+    font-size: 0.85rem;
+  }
+}

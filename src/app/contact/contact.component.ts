@@ -1,0 +1,40 @@
+/**************************************************************
+File: contact.component.ts
+Author: Adam Wilkins
+Last Updated: 6/2/2025
+Last to Update: Adam Wilkins
+***************************************************************/
+
+import { Component } from '@angular/core';
+import { CommonModule } from '@angular/common';
+
+@Component({
+  selector: 'app-contact',
+  standalone: true,
+  imports: [CommonModule],
+  templateUrl: './contact.component.html',
+  styleUrls: ['./contact.component.css']
+})
+export class ContactComponent {
+  contactName: string       = 'Adam Wilkins';
+  contactEmail: string      = 'adamwilkins012@gmail.com';
+  contactPhone: string      = '+1 (727) 267-9988';
+  contactAddress: string    = '2500 North River Rd, Manchester, New Hampshire, 03106';
+
+  /*********************************************************************************/
+  /*  Returns the phone link */
+  get phoneLink(): string {
+    const digits = this.contactPhone.replace(/\D+/g, '');
+    return `tel:${digits}`;
+  }
+  /*********************************************************************************/
+
+  /*********************************************************************************/
+  /*  List of social media links */
+  socialLinks = [
+    { href: 'https://snhu.joinhandshake.com/profiles/8u24ws',  label: 'Handshake',  icon: '🤝' },
+    { href: 'https://www.linkedin.com/in/adam-wilkins012/', label: 'LinkedIn', icon: '🔗' },
+    { href: 'https://github.com/2003nitro',   label: 'GitHub',   icon: '🐱' }
+  ];
+  /*********************************************************************************/
+}
