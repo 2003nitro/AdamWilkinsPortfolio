@@ -10,11 +10,11 @@
   "what_i_learned": "During this project I learned a lot about how to work in a scrum based setting with weekly sprints. I also learned a lot about how to develop a service laying creating a Flask API and using Spotify's API. This also allowed me to gain more experience in the development of a mobile app from start to finish with having to create mockups of the app and present and show what we have throughout the development.",
   "challenges": "",
   "What_was_not_completed": "The features we didn't get time to complete was the ability authenticate the user on the front end, select a specific playlist, and retrain the machine learning model as positive and negative effects were added.",
-  "cover_image": "/assets/project-images/SoundSync-Images/Image1.png",
+  "cover_image": "assets/project-images/SoundSync-Images/Image1.png",
   "images": [
     {
       "title": "Application Walkthough",
-      "path":"/assets/project-images/SoundSync-Images/Video1.mp4"
+      "path":"assets/project-images/SoundSync-Images/Video1.mp4"
     }
   ],
   "resources": {

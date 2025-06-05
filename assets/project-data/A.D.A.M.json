@@ -10,11 +10,11 @@
   "what_i_learned": "I learned a lot more about the software development lifecycle. I have taken a class in the past on SDL but it allowed me to take what I learned and put it into a practice with my capstone project. I learned a lot more about updating my tasks in the notes section and updating the workspace as each task is completed. I also learned more about working with speech recognition and how to develop it from scratch and the various ways to process the data.",
   "challenges": "",
   "What_was_not_completed": "",
-  "cover_image": "/assets/project-images/A.D.A.M-Images/Image1.png",
+  "cover_image": "assets/project-images/A.D.A.M-Images/Image1.png",
   "images": [
     {
       "title": "Application Walkthough",
-      "path":"/assets/project-images/A.D.A.M-Images/Video1.mp4"
+      "path":"assets/project-images/A.D.A.M-Images/Video1.mp4"
     }
   ],
   "resources": {
