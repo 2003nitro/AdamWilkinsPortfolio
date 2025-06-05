@@ -1,0 +1,10 @@
+{
+  "routes": {
+    "/AdamWilkinsPortfolio": {},
+    "/AdamWilkinsPortfolio/contact": {},
+    "/AdamWilkinsPortfolio/home": {},
+    "/AdamWilkinsPortfolio/project-temp": {},
+    "/AdamWilkinsPortfolio/projects": {},
+    "/AdamWilkinsPortfolio/skills": {}
+  }
+}
