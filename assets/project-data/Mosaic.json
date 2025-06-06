@@ -19,6 +19,7 @@
   ],
   "resources": {
   },
+  "featured": false,
   "tags": [
     "TypeScript",
     "JavaScript",

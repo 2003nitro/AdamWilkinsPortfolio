@@ -21,6 +21,7 @@
     "Spotipy API Documentation": "https://spotipy.readthedocs.io/en/2.24.0/",
     "Spotify API Documentation": "https://developer.spotify.com/documentation/web-api"
   },
+  "featured": false,
   "tags": [
     "Python",
     "Kotlin",

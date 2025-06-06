@@ -20,6 +20,7 @@
   "resources": {
 
   },
+  "featured": true,
   "tags": [
     "Python",
     "Software",
