@@ -20,6 +20,7 @@
   "resources": {
     "3D Model on Printables": "https://www.printables.com/model/227781-poly-clone-hero-controller"
   },
+  "featured": true,
   "tags": [
     "3d Printing",
     "Arduino",

@@ -28,6 +28,7 @@
   "resources": {
     "Guitar Model on Printables": "https://www.printables.com/model/233903-les-paul-clone-hero-controller-3-button-body-remix"
   },
+  "featured": true,
   "tags": [
     "3d Printing",
     "Arduino",

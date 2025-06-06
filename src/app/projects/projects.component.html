@@ -2,7 +2,7 @@
 <!--
 File: projects.component.html
 Author: Adam Wilkins
-Last Updated: 6/1/2025
+Last Updated: 6/6/2025
 Last to Update: Adam Wilkins
 -->
 <!-- ************************************************************************* -->
@@ -16,21 +16,21 @@ Last to Update: Adam Wilkins
 <!-- ************************************************************************* -->
 
 <!-- ************************************************************************* -->
- <!-- Section for all favorite projects -->
+ <!-- Project showcase section for most proud projects -->
 <section class="projects-section">
 
-  <h2 class="section-title">Top Favorite Projects</h2>
+  <h2 class="section-title">Project Showcase</h2>
 
   <!-- ************************************************************************* -->
-   <!-- Section for all prject cards in a grid -->
-  <div class="project-grid">
+   <!-- Section for all showcased projects at most 8 -->
+  <div class="showcase-grid">
 
     <!-- ************************************************************************* -->
      <!-- Make each project a button with a photo and a title -->
     <button
       type="button"
       class="project-card"
-      *ngFor="let project of projects"
+      *ngFor="let project of featuredProjects "
       (click)="openProject(project.path)"
       [attr.aria-label]="'Open ' + project.name"
     >
@@ -42,6 +42,87 @@ Last to Update: Adam Wilkins
 
     </button>
     <!-- ************************************************************************* -->
+  </div>
+  <!-- ************************************************************************* -->
+</section>
+<!-- ************************************************************************* -->
+
+
+<!-- ************************************************************************* -->
+ <!-- Section for all projects -->
+<section class="projects-section all-projects-section">
+
+  <h2 class="section-title">All Projects</h2>
+
+  <!-- ************************************************************************* -->
+   <!-- Drop Down tag filter-->
+  <div class="tag-filter-container">
+
+    <!-- ************************************************************************* -->
+     <!-- Dropdown button -->
+    <button
+      type="button"
+      class="dropdown-button"
+      (click)="toggleTagDropdown()"
+      aria-haspopup="true"
+      [attr.aria-expanded]="showTagDropdown"
+    >
+      Filter Tags ▼
+    </button>
+    <!-- ************************************************************************* -->
+
+    <!-- ************************************************************************* -->
+     <!-- Checkbox list -->
+    <div class="dropdown-menu" *ngIf="showTagDropdown">
+      <label *ngFor="let tag of allTags">
+        <input
+          type="checkbox"
+          [value]="tag"
+          [checked]="selectedTags.has(tag)"
+          (change)="onTagCheckboxChange(tag, ($any($event.target)).checked)"
+        />
+        {{ tag }}
+      </label>
+    </div>
+    <!-- ************************************************************************* -->
+
+    <!-- ************************************************************************* -->
+    <div class="selected-tags">
+      <button
+        *ngFor="let tag of selectedTagsArray"
+        type="button"
+        class="remove"
+        (click)="removeTag(tag)"
+        (keydown.enter)="removeTag(tag)"
+        [attr.aria-label]="'Remove ' + tag"
+      >
+        {{ tag }} ×
+      </button>
+    </div>
+    <!-- ************************************************************************* -->
+
+  </div>
+  <!-- ************************************************************************* -->
+
+  <!-- ************************************************************************* -->
+   <!-- Grid of all project cards that fit with the filters-->
+  <div class="project-grid">
+
+    <button
+      type="button"
+      class="project-card"
+      *ngFor="let project of filteredProjects"
+      (click)="openProject(project.path)"
+      [attr.aria-label]="'Open ' + project.name"
+    >
+
+      <img [src]="project.image" [alt]="project.name" />
+
+      <div class="card-footer">
+        <h3 class="project-title">{{ project.name }}</h3>
+      </div>
+
+    </button>
   </div>
   <!-- ************************************************************************* -->
 </section>
