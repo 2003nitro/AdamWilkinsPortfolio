@@ -1,7 +1,7 @@
 /**************************************************************
 File: project-temp.component.css
 Author: Adam Wilkins
-Last Updated: 6/2/2025
+Last Updated: 6/5/2025
 Last to Update: Adam Wilkins
 ***************************************************************/
 
@@ -12,7 +12,7 @@ Last to Update: Adam Wilkins
   overflow-y: auto;
   box-sizing: border-box;
   background-color: #121212;
-  padding-bottom: 2rem;
+  padding-bottom: 10rem;
 }
 
 .content-wrapper {

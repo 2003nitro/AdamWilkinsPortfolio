@@ -1,7 +1,7 @@
 /**************************************************************
 File: app.component.css
 Author: Adam Wilkins
-Last Updated: 6/1/2025
+Last Updated: 6/5/2025
 Last to Update: Adam Wilkins
 ***************************************************************/
 
@@ -11,12 +11,12 @@ Last to Update: Adam Wilkins
   box-sizing: border-box;
 }
 
-.background{
+.background {
   position: fixed;
-  padding: 0px;
-  top: 0px;
-  left: 0px;
-  margin: 0px;
+  padding: 0;
+  top: 0;
+  left: 0;
+  margin: 0;
   width: 100%;
   min-height: 100vh;
   background-color: #121212;
@@ -24,7 +24,7 @@ Last to Update: Adam Wilkins
 
 .navbar {
   position: fixed;
-  top: 0; 
+  top: 0;
   left: 0;
   width: 100%;
   height: 60px;
@@ -36,14 +36,6 @@ Last to Update: Adam Wilkins
   z-index: 1000;
 }
 
-.navigation {
-  margin-left: auto;
-  display: flex;
-  gap: 20px;
-  font-size: 25px;
-}
-
-
 .logo {
   font-size: 40px;
   color: #e0e0e0;
@@ -54,12 +46,46 @@ Last to Update: Adam Wilkins
   align-items: center;
 }
 
-
 .logo img {
   max-height: 100%;
   height: auto;
   width: auto;
   display: block;
+}
+
+.logo:hover {
+  color: #1abc9c;
+}
+
+.menu-toggle {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  margin-left: auto;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 28px;
+  height: 20px;
+  cursor: pointer;
+  z-index: 1001;
+}
+
+.hamburger span {
+  display: block;
+  height: 3px;
+  background: #bebebe;
+  border-radius: 2px;
+  transition: all 0.3s ease;
+}
+
+.navigation {
+  margin-left: auto;
+  display: flex;
+  gap: 20px;
+  font-size: 25px;
+  transition: max-height 0.3s ease-in-out;
 }
 
 .item {
@@ -73,11 +99,11 @@ Last to Update: Adam Wilkins
 .item::after {
   content: '';
   position: absolute;
-  bottom: 4px; 
+  bottom: 4px;
   left: 0;
-  width: 0; 
+  width: 0;
   height: 2px;
-  background-color: #1abc9c;  /* your accent */
+  background-color: #1abc9c;
   transition: width 0.3s;
 }
 
@@ -93,4 +119,45 @@ Last to Update: Adam Wilkins
 
 main {
   padding-top: 60px;
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    position: absolute;
+    top: 60px;
+    left: 0;
+    width: 100%;
+    background-color: #1f1f1f;
+    flex-direction: column;
+    overflow: hidden;
+    max-height: 0;
+  }
+
+
+  .hamburger {
+    display: flex;
+  }
+
+
+  .menu-toggle:checked ~ .navigation {
+    max-height: 300px;
+  }
+
+  .navigation .item {
+    padding: 15px 20px;
+    border-top: 1px solid rgba(255,255,255,0.1);
+  }
+  .navigation .item::after {
+    display: none;
+  }
+
+  .menu-toggle:checked + .hamburger span:nth-child(1) {
+    transform: translateY(8.5px) rotate(45deg);
+  }
+  .menu-toggle:checked + .hamburger span:nth-child(2) {
+    opacity: 0;
+  }
+  .menu-toggle:checked + .hamburger span:nth-child(3) {
+    transform: translateY(-8.5px) rotate(-45deg);
+  }
 }

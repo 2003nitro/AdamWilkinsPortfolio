@@ -1,7 +1,7 @@
 /**************************************************************
 File: skills.component.css
 Author: Adam Wilkins
-Last Updated: 6/2/2025
+Last Updated: 6/5/2025
 Last to Update: Adam Wilkins
 ***************************************************************/
 
@@ -9,8 +9,8 @@ Last to Update: Adam Wilkins
   display: block;
   height: 100vh;
   overflow-y: auto;
-
-  padding-bottom: 3rem;
+  box-sizing: border-box;
+  padding-bottom: 10rem;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');

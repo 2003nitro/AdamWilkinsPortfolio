@@ -1,7 +1,7 @@
 /**************************************************************
 File: home.component.css
 Author: Adam Wilkins
-Last Updated: 6/1/2025
+Last Updated: 6/5/2025
 Last to Update: Adam Wilkins
 ***************************************************************/
 :host {
@@ -9,7 +9,7 @@ Last to Update: Adam Wilkins
   height: 100vh;
   overflow-y: auto;
   box-sizing: border-box;
-  padding-bottom: 3rem;
+  padding-bottom: 10rem;
 }
 
 

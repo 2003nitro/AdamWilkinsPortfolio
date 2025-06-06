@@ -2,57 +2,66 @@
 <!--
 File: app.component.html
 Author: Adam Wilkins
-Last Updated: 6/1/2025
+Last Updated: 6/5/2025
 Last to Update: Adam Wilkins
 -->
 <!-- ************************************************************************* -->
 
-
 <!-- ************************************************************************* -->
- <!-- Sets the background for all pages to be dark grey -->
 <div class="background">
+
+  <!-- ************************************************************************* -->
+  <header class="navbar">
+
     <!-- ************************************************************************* -->
-     <!-- Navagation bar with logo and links to other pages -->
-    <header class="navbar">
+    <div class="logo">
+      <img src="assets/PersonalLogo.png" alt="Personal Logo">
+    </div>
+    <!-- ************************************************************************* -->
 
-        <div class="logo">
-            <img src="assets/PersonalLogo.png" alt="Personal Logo">
-        </div>
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
 
-        <!-- ************************************************************************* -->
-         <!-- Navagation to other pages-->
-        <nav class="navigation">
-            <a class="item" 
-                routerLink="/home"
-                routerLinkActive="active"
-                [routerLinkActiveOptions]="{exact: true}"
-            >Home</a>
-
-            <a class="item" 
-                routerLink="/projects" 
-                routerLinkActive="active"
-            >Projects</a>
-
-            <a class="item" 
-                routerLink="/skills" 
-                routerlinkActive="active"
-            >Skills</a>
-
-            <a class="item" 
-                routerLink="/contact" 
-                routerLinkActive="active"
-            >Contact</a>
-        </nav>
-        <!-- ************************************************************************* -->
-
-    </header>
+    <!-- ************************************************************************* -->
+    <label for="menu-toggle" class="hamburger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </label>
     <!-- ************************************************************************* -->
 
     <!-- ************************************************************************* -->
-    <main>
-        <router-outlet></router-outlet>
-    </main>
+    <nav class="navigation">
+      <a class="item"
+         routerLink="/home"
+         routerLinkActive="active"
+         [routerLinkActiveOptions]="{ exact: true }"
+      >Home</a>
+
+      <a class="item"
+         routerLink="/projects"
+         routerLinkActive="active"
+      >Projects</a>
+
+      <a class="item"
+         routerLink="/skills"
+         routerLinkActive="active"
+      >Skills</a>
+
+      <a class="item"
+         routerLink="/contact"
+         routerLinkActive="active"
+      >Contact</a>
+    </nav>
     <!-- ************************************************************************* -->
+
+  </header>
+  <!-- ************************************************************************* -->
+
+  <!-- ************************************************************************* -->
+  <main>
+    <router-outlet></router-outlet>
+  </main>
+  <!-- ************************************************************************* -->
 
 </div>
 <!-- ************************************************************************* -->

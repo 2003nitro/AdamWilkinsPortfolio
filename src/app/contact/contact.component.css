@@ -1,9 +1,17 @@
 /**************************************************************
 File: contact.component.css
 Author: Adam Wilkins
-Last Updated: 6/2/2025
+Last Updated: 6/5/2025
 Last to Update: Adam Wilkins
 ***************************************************************/
+
+:host {
+  display: block;
+  height: 100vh;
+  overflow-y: auto;
+  box-sizing: border-box;
+  padding-bottom: 10rem;
+}
 
 .contact-page {
   min-height: 100vh;
