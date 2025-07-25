@@ -1,0 +1,37 @@
+{
+  "name": "Personal 3d Printed Business Card",
+  "start_date": "May 5th 2025",
+  "end_date": "June 7th 2025",
+  "revisited_date": "",
+  "revisited_desctiption": "",
+  "status": "Completed",
+  "overview": "This personal project was designed to challenge and expand my skills in 3D modeling, printing, and hardware integration. I began by prototyping the design in Tinkercad, a tool I was familiar with from high school. However, I quickly realized the limitations of Tinkercad for the level of precision and customization this project required. After researching alternative software, I transitioned to Onshape, which proved to be an excellent choice due to its robust feature set and cloud-based accessibility. This allowed me to work on my designs from any device, improving both flexibility and productivity throughout the process.",
+  "description": "The goal of this project was to create a unique, custom 3D-printed business card that would help me stand out professionally. Rather than using a printed QR code, I embedded an NFC tag directly into the card to link to my personal website. This approach not only made the card more visually appealing by removing intrusive graphics, but also added a modern, interactive element that enables users to access my site simply by tapping the card with a smartphone.",
+  "what_i_learned": "Throughout this project, I gained hands-on experience with Onshape and significantly improved my 3D modeling skills. While I had prior exposure to 3D modeling through Tinkercad, Onshape introduced me to more advanced tools and workflows. I also deepened my understanding of 3D printing, especially when it came to achieving high-quality results. After an initial print that didn’t meet my expectations, I learned the importance of using a 0.2mm nozzle to enhance print resolution. Additionally, I figured out how to design a hollow section within the model and time a pause during printing to insert the NFC tag cleanly and securely.",
+  "challenges": "Transitioning from Tinkercad to Onshape was initially overwhelming due to the increased complexity and unfamiliar interface. Recreating my existing design while learning the new software required careful attention to detail. Ensuring that all the text on the card would print clearly and remain legible at a small scale also presented a challenge, particularly when accounting for layer height, font thickness, and spacing. Balancing these elements while working in a new environment took time and iteration.",
+  "What_was_not_completed": "",
+  "cover_image": "assets/project-images/Business-Card-Images/Image1.JPEG",
+  "images": [
+    {
+      "title": "First Version Printed with 0.4 Nozzle",
+      "path": "assets/project-images/Business-Card-Images/Image2.JPEG"
+    },
+    {
+      "title": "Second Version Printed with 0.2 Nozzle",
+      "path": "assets/project-images/Business-Card-Images/Image1.JPEG"
+    },
+    {
+      "title": "Second Version being printed with NFC tag",
+      "path": "assets/project-images/Business-Card-Images/Image3.JPEG"
+    }
+  ],
+  "resources": {
+    "Onshape": "https://www.onshape.com/en/",
+    "Tinkercad": "https://www.tinkercad.com/"
+  },
+  "featured": true,
+  "tags": [
+    "3d Modeling",
+    "3d Printing"
+  ]
+}
