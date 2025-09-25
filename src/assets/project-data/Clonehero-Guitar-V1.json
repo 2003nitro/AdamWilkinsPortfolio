@@ -2,8 +2,8 @@
   "name": "Clone Hero Guitar Version 1",
   "start_date": "November 3rd 2024",
   "end_date": "November 9th 2024",
-  "revisited_date": "",
-  "revisited_desctiption": "",
+  "revisited_date": "June 12th 2025",
+  "revisited_desctiption": "After completing version 2 of my Clone Hero guitar controller, I chose to revisit the original design to apply the improvements and techniques I had learned. One of the key upgrades was replacing the original switches with ones that have a higher actuation force (measured in gram-force), adding more resistance and creating a more realistic and satisfying feel during gameplay. I also mounted the microcontroller in a custom 3D-printed holder, making it easier to plug and unplug the USB cable without putting strain on the board. Additionally, I rewired the controller using solid-core wire and added connectors, allowing components to be easily disconnected without desoldering. These refinements improved both the performance and serviceability of the original build.",
   "status": "Completed",
   "overview": "The Clone Hero Guitar v1 project was inspired by a friend who owned a custom controller. After enjoying the experience of trying out his controller, I decided to take on the challenge of building my own. Through research, I identified a suitable 3D model for the body and sourced the necessary components, including an Arduino Pro Micro and KAILH low-profile switches. I opted to 3D print the body using PLA, dedicating approximately four days to printing, soldering, and programming. The result was a functional and personalized guitar controller that I’m proud to call my own. ",
   "description": "This project is a custom game controller designed for Clone Hero, a game inspired by Guitar Hero. The controller is configured to output either controller signals or keyboard inputs for each button press, with the default setup using keyboard inputs. While initially designed for Windows systems, it is also compatible with macOS and Linux, provided the Clone Hero game is installed. This versatile design ensures a seamless gaming experience across multiple platforms.",
@@ -13,8 +13,16 @@
   "cover_image": "assets/project-images/Clonehero-Guitar-V1-Images/Image1.JPEG",
   "images":[
     {
-      "title": "",
+      "title": "Original Controller",
       "path":"assets/project-images/Clonehero-Guitar-V1-Images/Image1.JPEG"
+    },
+    {
+      "title": "Inside Revisited Controller",
+      "path":"assets/project-images/Clonehero-Guitar-V1-Images/Image2.JPEG"
+    },
+    {
+      "title": "Revisited Controller Completed",
+      "path":"assets/project-images/Clonehero-Guitar-V1-Images/Image3.JPEG"
     }
   ],
   "resources": {

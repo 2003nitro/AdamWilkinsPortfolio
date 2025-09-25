@@ -2,7 +2,7 @@
 <!--
 File: app.component.html
 Author: Adam Wilkins
-Last Updated: 6/5/2025
+Last Updated: 9/25/2025
 Last to Update: Adam Wilkins
 -->
 <!-- ************************************************************************* -->
@@ -15,11 +15,11 @@ Last to Update: Adam Wilkins
 
     <!-- ************************************************************************* -->
     <div class="logo">
-      <img src="assets/PersonalLogo.png" alt="Personal Logo">
+      <img src="assets/PersonalLogo.png" alt="Personal Logo" routerLink="/home" routerLinkActive="active">
     </div>
     <!-- ************************************************************************* -->
 
-    <input type="checkbox" id="menu-toggle" class="menu-toggle" />
+    <input type="checkbox" id="menu-toggle" class="menu-toggle" #menuToggle/>
 
     <!-- ************************************************************************* -->
     <label for="menu-toggle" class="hamburger">
@@ -35,21 +35,25 @@ Last to Update: Adam Wilkins
          routerLink="/home"
          routerLinkActive="active"
          [routerLinkActiveOptions]="{ exact: true }"
+         (click)="closeMenu(menuToggle)"
       >Home</a>
 
       <a class="item"
          routerLink="/projects"
          routerLinkActive="active"
+         (click)="closeMenu(menuToggle)"
       >Projects</a>
 
       <a class="item"
          routerLink="/skills"
          routerLinkActive="active"
+         (click)="closeMenu(menuToggle)"
       >Skills</a>
 
       <a class="item"
          routerLink="/contact"
          routerLinkActive="active"
+         (click)="closeMenu(menuToggle)"
       >Contact</a>
     </nav>
     <!-- ************************************************************************* -->

@@ -1,7 +1,7 @@
 /**************************************************************
 File: app.component.ts
 Author: Adam Wilkins
-Last Updated: 6/1/2025
+Last Updated: 9/25/2025
 Last to Update: Adam Wilkins
 ***************************************************************/
 
@@ -19,4 +19,11 @@ import { RouterOutlet, RouterLink, RouterLinkActive} from '@angular/router';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })
-export class AppComponent {}
+export class AppComponent {
+  /*********************************************************************************/
+  /* Closes hamburger menu if its open */
+  closeMenu(menuToggle: HTMLInputElement) {
+    menuToggle.checked = false;
+  }
+  /*********************************************************************************/
+}
