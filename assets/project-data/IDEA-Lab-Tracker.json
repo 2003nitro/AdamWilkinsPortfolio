@@ -1,0 +1,28 @@
+{
+  "name": "IDEA Lab Tracker",
+  "start_date": "January 8th 2025",
+  "end_date": "May 29th 2025",
+  "revisited_date": "",
+  "revisited_desctiption": "",
+  "status": "Completed",
+  "overview": "The IDEA Lab Tracker was a website designed for the IDEA Lab, a place for students to build and develop hands on projects, in the School of Enginnering, Technology, and Aeronautics (SETA) at Southern New Hampshire University. This project was part of a class CS-340 Client/Server Development. This project requiered us to meet with stake holders and a team in the class to develop the website. This website was built using Angular and Python. The Python backend was used to create a connection between the Angular frontend and the database.",
+  "description": "This project is designed to track all screws, nuts, and components in the IDEA Lab. We chose a website design to be easily accessable from other devices. This project has multiple pages such as a home for searching, admin page for part adjustments, admin section to create users, and a database page to backup, restore, and upload a database.",
+  "what_i_learned": "I learned a lot about the development of a website and how to do UI/UX design. The knowledge i gainded from this project led me to wanting to take on the challenge of building this portfolio website.",
+  "challenges": "",
+  "What_was_not_completed": "",
+  "cover_image": "assets/project-images/IDEA-Lab-Tracker-Images/Image1.png",
+  "images": [
+  ],
+  "resources": {
+
+  },
+  "featured": true,
+  "tags": [
+    "HTML",
+    "CSS",
+    "TypeScript",
+    "Angular",
+    "Software",
+    "Python"
+  ]
+}
