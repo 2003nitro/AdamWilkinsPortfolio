@@ -41,31 +41,44 @@ Last to Update: Adam Wilkins
 /* ====================================== */
 /* ======  “Showcase” STYLES  =========== */
 /* ====================================== */
-
-/* 4) Grid for “Project Showcase” on desktop/tablet */
+/* Desktop / Tablet: wrap in rows, up to 4 columns */
 .showcase-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-  justify-items: center;
+  grid-template-columns: repeat(4, minmax(0, 1fr)); /* cap at 4 per row */
+  justify-items: stretch; /* cards fill their cell */
 }
 
-/* 5) On small screens, turn Showcase into a horizontal scroller */
-@media (max-width: 700px) {
-  .showcase-grid {
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    overflow-x: auto;
-    padding-bottom: 10px;    /* a bit of bottom padding */
+/* Optional: scale columns down at intermediate widths */
+@media (max-width: 1200px) {
+  .showcase-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+}
+@media (max-width: 900px) {
+  .showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+
+/* Phone: 2-row horizontal scroller (both rows scroll together) */
+  @media (max-width: 700px) {
+    .showcase-grid {
+      display: grid;
+      grid-auto-flow: column;             /* fill top→bottom, then make a new column */
+      grid-template-rows: repeat(2, auto);/* 2 stacked rows */
+      grid-auto-columns: 260px;           /* column width for each pair */
+      gap: 20px;
+      overflow-x: auto;                   /* horizontal scroll */
+      padding: 0 10px 10px;               /* little side & bottom padding */
+      scroll-snap-type: x proximity;      /* optional: snap columns */
+      -webkit-overflow-scrolling: touch;  /* smoother iOS scrolling */
+    }
+
+    .showcase-grid .project-card {
+      width: 100%;                /* fills the 260px column */
+      scroll-snap-align: start;   /* optional: snap each column start */
+    }
   }
 
-  .showcase-grid .project-card {
-    min-width: 260px;        /* show part of next card */
-    max-width: 260px;
-    flex-shrink: 0;          /* never shrink smaller */
-  }
-}
+
+
 
 /* ====================================== */
 /* ======  “All Projects” STYLES  ======== */

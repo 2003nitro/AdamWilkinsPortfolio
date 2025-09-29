@@ -51,10 +51,18 @@ Last to Update: Adam Wilkins
       >Skills</a>
 
       <a class="item"
+         routerLink="/resume"
+         routerLinkActive="active"
+         (click)="closeMenu(menuToggle)"
+      >Resume</a>
+
+      <a class="item"
          routerLink="/contact"
          routerLinkActive="active"
          (click)="closeMenu(menuToggle)"
       >Contact</a>
+
+      
     </nav>
     <!-- ************************************************************************* -->
 

@@ -4,6 +4,7 @@ Author: Adam Wilkins
 Last Updated: 6/5/2025
 Last to Update: Adam Wilkins
 ***************************************************************/
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
 :host {
   display: block;
@@ -13,7 +14,7 @@ Last to Update: Adam Wilkins
   padding-bottom: 10rem;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+
 
 :root {
   --bg-color: #121212;

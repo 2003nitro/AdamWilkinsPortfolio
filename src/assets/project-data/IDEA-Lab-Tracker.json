@@ -8,13 +8,17 @@
   "overview": "The IDEA Lab Tracker was a website designed for the IDEA Lab, a place for students to build and develop hands on projects, in the School of Enginnering, Technology, and Aeronautics (SETA) at Southern New Hampshire University. This project was part of a class CS-340 Client/Server Development. This project requiered us to meet with stake holders and a team in the class to develop the website. This website was built using Angular and Python. The Python backend was used to create a connection between the Angular frontend and the database.",
   "description": "This project is designed to track all screws, nuts, and components in the IDEA Lab. We chose a website design to be easily accessable from other devices. This project has multiple pages such as a home for searching, admin page for part adjustments, admin section to create users, and a database page to backup, restore, and upload a database.",
   "what_i_learned": "I learned a lot about the development of a website and how to do UI/UX design. The knowledge i gainded from this project led me to wanting to take on the challenge of building this portfolio website.",
-  "challenges": "",
+  "challenges": "This project marked my first experience working on a full website from the ground up, as well as my first time collaborating directly with clients. Navigating client communication and translating their needs into technical requirements was a new but valuable challenge. Additionally, following the Software Development Life Cycle (SDLC) in a structured environment required me to adapt to planning, iterative development, and stakeholder feedback loops. Balancing technical implementation with clear documentation and client expectations helped me grow significantly as both a developer and a communicator.",
   "What_was_not_completed": "",
   "cover_image": "assets/project-images/IDEA-Lab-Tracker-Images/Image1.png",
   "images": [
+    {
+      "title": "Home Page",
+      "path":"assets/project-images/IDEA-Lab-Tracker-Images/Image2.jpg"
+    }
   ],
   "resources": {
-
+    "Angular Documentation": "https://angular.dev/overview"
   },
   "featured": true,
   "tags": [
