@@ -30,7 +30,7 @@ Last to Update: Adam Wilkins
 
         <!-- ************************************************************************* -->
          <!-- Project Status -->
-        <p class="text status" *ngIf="ProjectData.status && ProjectData.status !== ''">
+        <p [ngClass]="GetStatusClass(ProjectData.status)" *ngIf="ProjectData.status && ProjectData.status !== ''">
           {{ ProjectData.status }}
         </p>
         <!-- ************************************************************************* -->

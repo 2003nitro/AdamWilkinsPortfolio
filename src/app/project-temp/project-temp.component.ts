@@ -50,4 +50,14 @@ export class ProjectTempComponent implements OnInit {
     return /\.(mp4|webm|ogg)$/i.test(src);
   }
    /*********************************************************************************/
+
+   GetStatusClass(status: string) {
+    return {
+    'Completed-status': status === 'Completed',
+    'InProgress-status': status === 'In Progress',
+    'NotCompleted-status': status === 'Not Completed',
+    'ComingSoon-status': status === 'Coming Soon',
+    };
+  }
+
 }

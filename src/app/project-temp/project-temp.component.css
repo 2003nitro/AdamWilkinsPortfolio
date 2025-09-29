@@ -36,7 +36,7 @@ Last to Update: Adam Wilkins
   margin-top: 0.25rem;
 }
 
-.status {
+.Completed-status {
   display: inline-block;
   margin-top: 0.5rem;
   padding: 0.25rem 0.5rem;
@@ -45,6 +45,43 @@ Last to Update: Adam Wilkins
   color: white;
   font-weight: 500;
   font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.InProgress-status {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background-color: #F9A825;  
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.NotCompleted-status {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background-color: #C62828;  
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+
+.ComingSoon-status {
+  display: inline-block;
+  margin-top: 0.5rem;
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  background-color: #1565C0;  
+  color: white;
+  font-weight: 500;
+  font-size: 0.9rem;
+  line-height: 1.5;
 }
 
 h1.text {
