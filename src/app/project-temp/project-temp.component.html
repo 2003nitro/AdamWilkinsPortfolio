@@ -186,8 +186,8 @@ Last to Update: Adam Wilkins
         <!-- ************************************************************************* -->
 
         <!-- ************************************************************************* -->
-         <!-- Lessons Learned Section -->
-        <section class="section-block" *ngIf="ProjectData.resources?.length">
+         <!-- Resources Section -->
+        <section class="section-block" *ngIf="ProjectData.resources && (ProjectData.resources | keyvalue).length">
 
           <h2 class="text">Resources</h2>
 

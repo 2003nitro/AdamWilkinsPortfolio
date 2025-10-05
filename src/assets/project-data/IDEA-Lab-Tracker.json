@@ -18,7 +18,8 @@
     }
   ],
   "resources": {
-    "Angular Documentation": "https://angular.dev/overview"
+    "Angular Documentation": "https://angular.dev/overview",
+    "GitHub Link": "https://github.com/2003nitro/IDEA-Lab-Tracker"
   },
   "featured": true,
   "tags": [

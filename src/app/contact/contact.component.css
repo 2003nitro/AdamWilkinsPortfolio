@@ -1,9 +1,10 @@
-/**************************************************************
-File: contact.component.css
-Author: Adam Wilkins
-Last Updated: 6/5/2025
-Last to Update: Adam Wilkins
-***************************************************************/
+
+/**************************************************************/
+/* File: contact.component.css
+/* Author: Adam Wilkins
+/* Last Updated: 10/5/2025
+/* Last to Update: Adam Wilkins
+/***************************************************************/
 
 :host {
   display: block;
@@ -13,6 +14,7 @@ Last to Update: Adam Wilkins
   padding-bottom: 10rem;
 }
 
+/* css for the whole page */
 .contact-page {
   min-height: 100vh;
   display: flex;
@@ -22,6 +24,7 @@ Last to Update: Adam Wilkins
   box-sizing: border-box;
 }
 
+/* css for the card background */
 .contact-card {
   background-color: #ffffff;
   border-radius: 10px;
@@ -32,6 +35,7 @@ Last to Update: Adam Wilkins
   text-align: center;
 }
 
+/* css for name header on the card*/
 .name {
   margin: 0 0 1rem;
   font-size: 1.75rem;
@@ -39,6 +43,7 @@ Last to Update: Adam Wilkins
   letter-spacing: 0.5px;
 }
 
+/* css for contact information */
 .contact-item {
   display: flex;
   align-items: center;
@@ -46,12 +51,14 @@ Last to Update: Adam Wilkins
   margin: 0.75rem 0;
 }
 
+/* css for contact icons */
 .icon {
   font-size: 1.5rem;
   margin-right: 0.75rem;
   color: #4a5568;
 }
 
+/* css for email and phone */
 .contact-link,
 .contact-text {
   color: #2d3748;
@@ -60,10 +67,12 @@ Last to Update: Adam Wilkins
   word-break: break-word;
 }
 
+/* css for email and phone hovering*/
 .contact-link:hover {
   text-decoration: underline;
 }
 
+/* css for site links section */
 .social-container {
   margin-top: 1.5rem;
   display: flex;
@@ -72,6 +81,7 @@ Last to Update: Adam Wilkins
   gap: 1rem;
 }
 
+/* css for site links */
 .social-link {
   display: inline-flex;
   align-items: center;
@@ -83,21 +93,25 @@ Last to Update: Adam Wilkins
   transition: background-color 0.2s ease, transform 0.2s ease;
 }
 
+/* css for site links hovering */
 .social-link:hover {
   background-color: #e2e8f0;
   transform: translateY(-2px);
 }
 
+/* css for site link icons */
 .social-icon {
   font-size: 1.4rem;
 }
 
+/* css for site link labels */
 .social-label {
   font-size: 0.95rem;
   color: #2d3748;
   font-weight: 500;
 }
 
+/* css for site links on smaller screens */
 @media (max-width: 400px) {
   .social-link {
     padding: 0.3rem 0.6rem;

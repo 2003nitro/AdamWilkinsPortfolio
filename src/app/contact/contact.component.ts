@@ -1,7 +1,7 @@
 /**************************************************************
 File: contact.component.ts
 Author: Adam Wilkins
-Last Updated: 6/2/2025
+Last Updated: 10/5/2025
 Last to Update: Adam Wilkins
 ***************************************************************/
 
@@ -22,7 +22,8 @@ export class ContactComponent {
   contactAddress: string    = '2500 North River Rd, Manchester, New Hampshire, 03106';
 
   /*********************************************************************************/
-  /*  Returns the phone link */
+  // Output: phone link
+  // Input: NONE
   get phoneLink(): string {
     const digits = this.contactPhone.replace(/\D+/g, '');
     return `tel:${digits}`;
