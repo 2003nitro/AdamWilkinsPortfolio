@@ -1,0 +1,21 @@
+{
+  "name": "Scale Robotic Car",
+  "start_date": "TBD",
+  "end_date": "TBD",
+  "revisited_date": "",
+  "revisited_desctiption": "",
+  "status": "Coming Soon",
+  "overview": "This upcoming project will be part of EG-361: Introduction to Autonomous Robots. In this course, we will be working with pre-built four-wheel robotic cars and will focus on developing the programming necessary to control their movement. This includes coordinating the wheels to drive in a straight line, execute turns, and navigate through intersections. A PixyCam2 will be mounted on each car to detect the state of a stoplight, allowing the robot to make stop-and-go decisions in response to its environment. The goal of the project is to apply fundamental robotics and computer vision concepts to create a functional autonomous system capable of interacting with its surroundings.",
+  "description": "",
+  "what_i_learned": "",
+  "challenges": "",
+  "What_was_not_completed": "",
+  "cover_image": "assets/project-images/COMING-SOON-IMAGE/Image1.png",
+  "images": [
+  ],
+  "resources": {
+  },
+  "featured": true,
+  "tags": [
+  ]
+}
