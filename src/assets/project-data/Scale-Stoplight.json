@@ -10,8 +10,36 @@
   "what_i_learned": "As we work through this project, I’m gaining a stronger understanding of how relays operate, including how to determine the correct voltage requirements and safely integrate them into a circuit. I’m also learning how to work with metal extrusion for building structural components, which is new to me. In addition, I’ve started exploring how the PixyCam2 functions, particularly how it detects bright lights and how to fine-tune its settings for accurate color recognition.",
   "challenges": "One of the challenges we’re currently facing is with the PixyCam2—when the LEDs are too bright, the camera reads all the lights as white, making it difficult to distinguish between colors. To address this, we’re experimenting with multiple solutions: adjusting the camera’s brightness settings, lowering the voltage supplied to the LEDs, and designing a diffuser that will sit in front of each LED to soften the light output. Another issue has been identifying the correct voltage specifications for the relays we were given. With guidance from our professor, we were able to confirm the appropriate voltage range to ensure reliable and stable operation.",
   "What_was_not_completed": "",
-  "cover_image": "",
+  "cover_image": "assets/project-images/Scale-Stoplight-Images/Image6.JPEG",
   "images": [
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image6.JPEG"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Video1.mp4"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image1.JPEG"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image2.JPEG"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image3.JPEG"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image4.JPEG"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image5.JPEG"
+    }
   ],
   "resources": {
 
