@@ -1,19 +1,49 @@
 {
   "name": "Scale Stop Light",
   "start_date": "September 4th 2025",
-  "end_date": "Present",
+  "end_date": "December 19th 2025",
   "revisited_date": "",
   "revisited_desctiption": "",
-  "status": "In Progress",
-  "overview": "This project is part of EG-361: Introduction to Autonomous Robots. It was assigned to me and a classmate as an extra challenge, based on our previous experience in related coursework. Our team consisted of one Computer Science major and one Engineering major, allowing us to collaborate across disciplines. The primary goal was to design and build a functional stoplight system that could eventually be used in a scaled environment with autonomous robotic cars. Although autonomous robotic cars will be introduced in a later phase of the course, we were tasked with ensuring that the stoplight would be compatible with the PixyCam2—specifically testing whether the camera could detect the light at the correct height and brightness. This validation step was essential to ensure that the future robotic vehicles would be able to recognize and respond to the stoplight during later integration.",
-  "description": "This project focuses on building a realistic intersection stoplight system for a scaled-down environment. The stoplight will eventually be used with robotic cars in a future portion of the course, but the primary task was to create the light itself. The structure is constructed using a combination of metal extrusions and custom 3D-printed parts. The lights are mounted using magnets and pogo pins, allowing for both secure attachment and efficient power transfer. Because the lights require between 8.5V and 9V, they are powered by an external supply, with relays controlled by an Arduino Uno to manage the light sequence. The system mimics real-world traffic behavior and includes adjustable timing variables. As part of the testing process, a PixyCam2 will be used to confirm that the light is bright and high enough to be detected by a camera mounted on a future robotic car.",
-  "what_i_learned": "As we work through this project, I’m gaining a stronger understanding of how relays operate, including how to determine the correct voltage requirements and safely integrate them into a circuit. I’m also learning how to work with metal extrusion for building structural components, which is new to me. In addition, I’ve started exploring how the PixyCam2 functions, particularly how it detects bright lights and how to fine-tune its settings for accurate color recognition.",
-  "challenges": "One of the challenges we’re currently facing is with the PixyCam2—when the LEDs are too bright, the camera reads all the lights as white, making it difficult to distinguish between colors. To address this, we’re experimenting with multiple solutions: adjusting the camera’s brightness settings, lowering the voltage supplied to the LEDs, and designing a diffuser that will sit in front of each LED to soften the light output. Another issue has been identifying the correct voltage specifications for the relays we were given. With guidance from our professor, we were able to confirm the appropriate voltage range to ensure reliable and stable operation.",
+  "status": "Completed",
+  "overview": "This project was part of EG-361: Introduction to Autonomous Robots. It was assigned to me and a classmate as an extra challenge, based on our previous experience in related coursework. Our team consisted of one Computer Science major and one Engineering major, allowing us to collaborate across disciplines. The primary goal was to design and build a functional stoplight system that is used in a scaled environment with scaled autonomous robotic cars. The scale cars were introduced later in the course. We were also tasked with ensuring that the stoplight would be compatible with the PixyCam2, specifically testing whether the camera could detect the light at the correct height and brightness. This validation step was essential to ensure that the scale cars would be able to recognize and respond to the stoplight during integration.",
+  "description": "This project focused on building a realistic intersection stoplight system for a scaled-down environment. While the stoplight was intended to be used with robotic cars in a later portion of the course, our primary task was to design and construct the light itself. The structure was built using a combination of metal extrusions and custom 3D-printed parts. The lights were mounted using magnets and pogo pins, enabling both secure attachment and efficient power transfer. Because the lights required between 8.5V and 9V, they were powered by an external supply, with relays controlled by an Arduino Uno to manage the light sequence. The system was programmed to mimic real-world traffic behavior and included adjustable timing variables. As part of the testing process, we used a PixyCam2 to verify that the lights were bright and positioned at a height that could be reliably detected by a camera mounted on a future robotic car.",
+  "what_i_learned": "I learned a wide range of hands-on technical and collaborative skills throughout this project. I gained experience soldering both wires and PCB components, managing power distribution across the system, and working with relay logic to control the lights. I also learned general wiring practices and how to troubleshoot circuit issues related to voltage and power. Mechanically, I used tools like a belt sander, band saw, and mill to shape parts and gained experience with CAD features such as tolerances, hole placement, and mirroring to ensure proper fits in 3D-printed components. On the software side, I used Onshape to design and refine custom mounts and housings. I also developed project management and communication skills, working closely with my teammate and our professor as a stakeholder to stay aligned on expectations and iterate through prototyping and testing stages, such as refining light brightness and adding a diffuser for better PixyCam detection.",
+  "challenges": "One of the main challenges we faced was with the PixyCam2—when the LEDs were too bright, the camera interpreted all the lights as white, making it difficult to distinguish between colors. To solve this, we tested several solutions: adjusting the camera’s brightness settings, lowering the voltage supplied to the LEDs, and designing a custom diffuser to soften the light output. Another challenge involved determining the correct voltage specifications for the relays we were provided. With guidance from our professor, we were able to identify the proper voltage range to ensure the system operated reliably and safely.",
   "What_was_not_completed": "",
-  "cover_image": "",
+  "cover_image": "assets/project-images/Scale-Stoplight-Images/Image6.JPEG",
   "images": [
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image6.JPEG"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Video1.mp4"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image1.JPEG"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image2.JPEG"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image3.JPEG"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image4.JPEG"
+    },
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Stoplight-Images/Image5.JPEG"
+    }
   ],
   "resources": {
+    "Arduino Uno Documentation": "https://docs.arduino.cc/hardware/uno-rev3/",
+    "Onshape": "https://www.onshape.com/en/"
 
   },
   "featured": true,
