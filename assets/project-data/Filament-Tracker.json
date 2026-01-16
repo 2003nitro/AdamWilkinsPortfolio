@@ -1,0 +1,25 @@
+{
+  "name": "Filament Tracker",
+  "start_date": "TBD",
+  "end_date": "TBD",
+  "revisited_date": "",
+  "revisited_desctiption": "",
+  "status": "Coming Soon",
+  "overview": "This project idea is to build a discord bot (using discord as the front end) to track filament for my 3d printer. I plan to have color, brand, style (silk, matte, etc.), in stock, and links to buy as the data for each filamnet with a specific number. The idea is to have a wall of benchys and filamnet swatches that have numbers to identify each individual filament. I will be able to search for the exact filamnet I want using the discord bot or I can select one from the wall and search the number to quickly identify if I have it in stock and which one it is.",
+  "description": "",
+  "what_i_learned": "",
+  "challenges": "",
+  "What_was_not_completed": "",
+  "cover_image": "assets/project-images/Coming-Soon/Image1.JPEG",
+  "images": [
+  ],
+  "resources": {
+  },
+  "featured": false,
+  "tags": [
+    "3d Modeling",
+    "3d Printing",
+    "Python",
+    "Software"
+  ]
+}

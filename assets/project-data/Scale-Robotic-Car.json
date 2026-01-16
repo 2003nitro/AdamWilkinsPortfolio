@@ -1,21 +1,39 @@
 {
   "name": "Scale Robotic Car",
-  "start_date": "TBD",
-  "end_date": "TBD",
+  "start_date": "November 6th, 2025",
+  "end_date": "December 19th, 2025",
   "revisited_date": "",
   "revisited_desctiption": "",
-  "status": "Coming Soon",
-  "overview": "This upcoming project will be part of EG-361: Introduction to Autonomous Robots. In this course, we will be working with pre-built four-wheel robotic cars and will focus on developing the programming necessary to control their movement. This includes coordinating the wheels to drive in a straight line, execute turns, and navigate through intersections. A PixyCam2 will be mounted on each car to detect the state of a stoplight, allowing the robot to make stop-and-go decisions in response to its environment. The goal of the project is to apply fundamental robotics and computer vision concepts to create a functional autonomous system capable of interacting with its surroundings.",
-  "description": "",
-  "what_i_learned": "",
-  "challenges": "",
-  "What_was_not_completed": "",
-  "cover_image": "assets/project-images/COMING-SOON-IMAGE/Image1.png",
+  "status": "Completed",
+  "overview": "This project was part of EG-361: Introduction to Autonomous Robots, a course focused on embedded systems and autonomous vehicle control. Students were assigned pre-built four-wheel scale robotic cars and worked in teams to wire sensors, integrate components, and develop embedded software. The primary learning goals were centered around motor control, sensor integration, and real-time behavior. While one objective was to use the PixyCam2 to detect a stoplight, as it was built in a separate project I worked on, that requirement was made optional this semester due to ongoing development. Early assignments focused on low-level control, such as using PID to navigate a 3 ft x 3 ft square using only wheel encoders. My teammate and I completed it in 10.11 seconds, ranking in the top three teams. Later phases built toward a complex, multi-sensor autonomous routine.",
+  "description": "The robotic car was programmed to perform a wide range of tasks, including line following with bottom-mounted sensors, object detection using an ultrasonic sensor, turning logic based on encoder feedback, and status output through a small screen and buzzer. Our car displayed song progress, played a tune, and activated appropriate lighting such as headlights while driving, high beams when detecting obstacles, brake lights when stopping, and turn signals during turns. All of these behaviors were executed using protothreads to simulate multithreading, enabling simultaneous sensor and actuator control. While stoplight detection using a PixyCam2 was part of the original plan, it was made optional due to limited time and ongoing development of the light system.",
+  "what_i_learned": "Through this project, I gained a deeper understanding of motor control, sensor fusion, and how to coordinate multiple components in a real-time embedded system. I learned how to use protothreads effectively to simulate multitasking and gained insight into how that concept relates to multithreading in modern processors. This experience also helped me build confidence in debugging timing issues, coordinating sensor inputs, and managing output logic to control the car’s overall behavior.",
+  "challenges": "One of the biggest challenges we faced was related to the car’s traction. During the 3 ft x 3 ft PID test, our original wheels slipped due to dirt on the floor, leading to inaccurate turns. We solved this by switching to wheels with better grip. However, in the final project, these grippy wheels created too much friction on the paper-lined test area, which caused paper shifting and poor line following. We reverted to the original wheels, which allowed the car to slide slightly and follow the line more accurately. Another challenge involved managing timing with protothreads. Because we were switching between so many tasks, the detection logic slowed down, causing delays in object avoidance. We adjusted for this by detecting obstacles from a slightly farther distance and shortening the turn radius. After turning, the car would continue searching for the line by adjusting motor output until it re-centered.",
+  "What_was_not_completed": "We were unable to complete the stoplight response functionality. While we successfully configured the PixyCam2 to detect red, yellow, and green lights, we ran out of time before we could implement the code needed to move the PixyCam’s servo up and down and integrate that detection logic with the car’s behavior.",
+  "cover_image": "assets/project-images/Scale-Robotic-Car-Images/Image1.JPEG",
   "images": [
+    {
+      "title": "",
+      "path":"assets/project-images/Scale-Robotic-Car-Images/Image1.JPEG"
+    },
+    {
+      "title": "3ft x 3ft PID Test",
+      "path":"assets/project-images/Scale-Robotic-Car-Images/Video1.mp4"
+    },
+    {
+      "title": "Final Project",
+      "path":"assets/project-images/Scale-Robotic-Car-Images/Video2.mp4"
+    }
   ],
   "resources": {
+    "GitHub Repository": "https://github.com/2003nitro/ScaleRoboticCar.git",
+    "Arduino Mega Documentation": "https://docs.arduino.cc/hardware/mega-2560/",
+    "PixyCam2 Documentation": "https://docs.pixycam.com/wiki/doku.php?id=wiki:v2:start"
   },
   "featured": true,
   "tags": [
+    "Arduino",
+    "C++",
+    "Embedded Systems"
   ]
 }
