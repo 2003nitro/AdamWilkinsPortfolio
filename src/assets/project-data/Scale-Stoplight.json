@@ -42,6 +42,7 @@
     }
   ],
   "resources": {
+    "GitHub Repository": "https://github.com/2003nitro/ScaleStopLight.git",
     "Arduino Uno Documentation": "https://docs.arduino.cc/hardware/uno-rev3/",
     "Onshape": "https://www.onshape.com/en/"
 
