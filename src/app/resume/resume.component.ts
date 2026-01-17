@@ -1,3 +1,10 @@
+/**************************************************************
+File: resume.component.ts
+Author: Adam Wilkins
+Last Updated: 1/17/2026
+Last to Update: Adam Wilkins
+***************************************************************/
+
 import { Component } from '@angular/core';
 import { DomSanitizer, SafeResourceUrl } from '@angular/platform-browser';
 

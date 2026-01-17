@@ -1,7 +1,7 @@
 /**************************************************************
 File: home.component.css
 Author: Adam Wilkins
-Last Updated: 6/5/2025
+Last Updated: 1/17/2026
 Last to Update: Adam Wilkins
 ***************************************************************/
 :host {
@@ -12,13 +12,14 @@ Last to Update: Adam Wilkins
   padding-bottom: 10rem;
 }
 
-
+/* css for the whole page */
 .profile {
   width: 90%;
   margin: 2rem auto;
   border-collapse: collapse;
 }
 
+/* css for the container including photo and text */
 .media-container,
 .info-container {
   width: 50%;
@@ -26,6 +27,7 @@ Last to Update: Adam Wilkins
   padding: 1.5rem;
 }
 
+/* css for the photo */
 .media {
   display: block;
   margin: 0 auto;
@@ -35,6 +37,7 @@ Last to Update: Adam Wilkins
   object-fit: contain;
 }
 
+/* css for about me header */
 .name {
   margin: 0 0 0.5rem;
   font-size: 2rem;
@@ -42,6 +45,7 @@ Last to Update: Adam Wilkins
   color: #bebebe;
 }
 
+/* css for the about me section */
 .aboutMe {
   margin: 0;
   line-height: 1.5;
@@ -49,6 +53,7 @@ Last to Update: Adam Wilkins
   color: #818181;
 }
 
+/* css for the contact me button */
 .button {
   background-color: #bebebe;
   border: none;
@@ -62,6 +67,7 @@ Last to Update: Adam Wilkins
   cursor: pointer;
 }
 
+/* css for smaller screens (phones) */
 @media (max-width: 768px) {
   .profile {
     display: flex;

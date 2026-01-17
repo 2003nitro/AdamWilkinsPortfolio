@@ -15,27 +15,32 @@ Last to Update: Adam Wilkins
   padding-bottom: 10rem;
 }
 
+/* css for the whole page */
 .content-wrapper {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
 }
 
+/* css for each section */
 .section-block {
   margin-bottom: 2rem;
 }
 
+/* css for text */
 .text {
   color: #e0e0e0;
   line-height: 1.5;
 }
 
+/* css for date text */
 .meta {
   font-size: 0.9rem;
   color: #b0b0b0;
   margin-top: 0.25rem;
 }
 
+/* css for completed status*/
 .Completed-status {
   display: inline-block;
   margin-top: 0.5rem;
@@ -48,6 +53,7 @@ Last to Update: Adam Wilkins
   line-height: 1.5;
 }
 
+/* css for in progress status */
 .InProgress-status {
   display: inline-block;
   margin-top: 0.5rem;
@@ -60,6 +66,7 @@ Last to Update: Adam Wilkins
   line-height: 1.5;
 }
 
+/* css for not completed status */
 .NotCompleted-status {
   display: inline-block;
   margin-top: 0.5rem;
@@ -72,6 +79,7 @@ Last to Update: Adam Wilkins
   line-height: 1.5;
 }
 
+/* css for coming soon status */
 .ComingSoon-status {
   display: inline-block;
   margin-top: 0.5rem;
@@ -84,6 +92,7 @@ Last to Update: Adam Wilkins
   line-height: 1.5;
 }
 
+/* css for main header (title) */
 h1.text {
   position: sticky;
   top: 0;
@@ -97,6 +106,7 @@ h1.text {
   border-bottom: 1px solid #333;
 }
 
+/* css for sub header (Section headers) */
 h2.text {
   font-size: 1.5rem;
   margin-bottom: 0.75rem;
@@ -105,6 +115,7 @@ h2.text {
   padding-bottom: 0.25rem;
 }
 
+/* css for photo carousel */
 .carousel {
   position: relative;
   width: 100%;
@@ -115,12 +126,14 @@ h2.text {
   background: #000;
 }
 
+/* css for each slide page */
 .slides {
   display: flex;
   height: 100%;
   transition: transform 0.5s ease;
 }
 
+/* css for each slide photo */
 .slide {
   flex: none;
   width: 100%;
@@ -130,6 +143,7 @@ h2.text {
   background: #121212;
 }
 
+/* css for the photo contianer*/
 .media-container {
   flex: 1;
   display: flex;
@@ -138,6 +152,7 @@ h2.text {
   overflow: hidden;
 }
 
+/* css for images and videos */
 .media-container img,
 .media-container video {
   max-width: 100%;
@@ -146,6 +161,7 @@ h2.text {
   display: block;
 }
 
+/* css for each slide title*/
 .image-title {
   margin: 0;
   padding: 0.5rem 1rem;
@@ -156,6 +172,7 @@ h2.text {
   box-sizing: border-box;
 }
 
+/* css for the dots section */
 .dots {
   display: flex;
   justify-content: center;
@@ -163,6 +180,7 @@ h2.text {
   margin-top: 0.5rem;
 }
 
+/* css for each dot button in photo carousel */
 .dot {
   width: 0.75em;
   height: 0.75em;
@@ -173,10 +191,12 @@ h2.text {
   padding: 0;
 }
 
+/* css for the selected dot */
 .dot.active {
   background: white;
 }
 
+/* css for resources section */
 .resources-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
@@ -186,6 +206,7 @@ h2.text {
   margin: 0;
 }
 
+/* css for each resources by defualt */
 .resources-grid li a {
   color: #1e88e5;
   text-decoration: none;
@@ -196,16 +217,19 @@ h2.text {
   transition: background-color 0.2s ease;
 }
 
+/* css for each resources when hovering */
 .resources-grid li a:hover {
   background-color: #333;
 }
 
+/* css for the tags section */
 .tags-container {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
+/* css for each tag */
 .tag {
   background-color: #333;
   padding: 0.25rem 0.5rem;
@@ -214,6 +238,7 @@ h2.text {
   color: #e0e0e0;
 }
 
+/* css for the cover image */
 .cover-img {
   display: block;
   max-width: 600px;
@@ -223,6 +248,7 @@ h2.text {
   object-fit: cover;
 }
 
+/* css for loading text */
 .loading-text {
   color: #e0e0e0;
   text-align: center;

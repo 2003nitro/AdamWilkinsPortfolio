@@ -1,7 +1,7 @@
 /**************************************************************
 File: project-temp.component.ts
 Author: Adam Wilkins
-Last Updated: 6/2/2025
+Last Updated: 1/17/2026
 Last to Update: Adam Wilkins
 ***************************************************************/
 
@@ -51,6 +51,8 @@ export class ProjectTempComponent implements OnInit {
   }
    /*********************************************************************************/
 
+   /*********************************************************************************/
+   /* Returns the status of the project based on status in json file */
    GetStatusClass(status: string) {
     return {
     'Completed-status': status === 'Completed',
@@ -58,6 +60,7 @@ export class ProjectTempComponent implements OnInit {
     'NotCompleted-status': status === 'Not Completed',
     'ComingSoon-status': status === 'Coming Soon',
     };
+    /*********************************************************************************/
   }
 
 }

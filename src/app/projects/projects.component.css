@@ -1,11 +1,11 @@
 /**************************************************************
 File: projects.component.css
 Author: Adam Wilkins
-Last Updated: 6/5/2025
+Last Updated: 1/17/2026
 Last to Update: Adam Wilkins
 ***************************************************************/
 
-/* — 0) Host / page‐wide styling — */
+
 :host {
   display: block;
   height: 100vh;
@@ -15,7 +15,7 @@ Last to Update: Adam Wilkins
   padding-bottom: 10rem;
 }
 
-/* — 1) Page Header — */
+/* css for the page header */
 .header {
   display: flex;
   justify-content: center;
@@ -23,14 +23,14 @@ Last to Update: Adam Wilkins
   color: #bebebe;
 }
 
-/* — 2) Section Wrapper — */
+/* css for project sections */
 .projects-section {
   max-width: 1200px;
   margin: 30px auto;
-  padding: 0 20px;        /* 20px gutter on phones */
+  padding: 0 20px;
 }
 
-/* — 3) Section Title — */
+/* css for the section headers */
 .section-title {
   margin-bottom: 20px;
   font-size: 1.5rem;
@@ -38,10 +38,7 @@ Last to Update: Adam Wilkins
   text-align: left;
 }
 
-/* ====================================== */
-/* ======  “Showcase” STYLES  =========== */
-/* ====================================== */
-/* Desktop / Tablet */
+/* css for the showcase grid style */
 .showcase-grid {
   display: grid;
   gap: 20px;
@@ -49,11 +46,11 @@ Last to Update: Adam Wilkins
   justify-items: stretch;
 }
 
-/* Optional ramps */
 @media (max-width: 1200px) { .showcase-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); } }
 @media (max-width: 900px)  { .showcase-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
 
-/* Phone: 2-row horizontal scroller that moves together */
+
+/* css for 2 row scroller for mobile */
 @media (max-width: 700px) {
   .showcase-grid {
     /* Reset desktop grid so columns can be created implicitly */
@@ -80,20 +77,19 @@ Last to Update: Adam Wilkins
 }
 
 
-/* ====================================== */
-/* ======  “All Projects” STYLES  ======== */
-/* ====================================== */
 
-/* 6) Tag‐Filter Container: flex flow so dropdown + chips sit side by side */
+
+/* css for tag filter container */
 .tag-filter-container {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 12px;
   margin-bottom: 20px;
+  position: relative;
 }
 
-/* 7) The dropdown‐toggle button */
+/* css for the filter dropdown */
 .dropdown-button {
   background-color: #1e1e1e;
   color: #bebebe;
@@ -105,49 +101,107 @@ Last to Update: Adam Wilkins
   position: relative;
 }
 
+/* css for filter button hover */
 .dropdown-button:hover,
 .dropdown-button:focus {
   border-color: #777;
   outline: none;
 }
 
-/* 8) The actual checkbox list, shown or hidden by *ngIf */
+/* css for menu from dropdown button */
 .dropdown-menu {
   background-color: #1e1e1e;
   border: 1px solid #444;
   border-radius: 5px;
   padding: 10px;
-  max-height: 200px;      /* allow vertical scroll if many tags */
+
+  /* Prevents tiny scroll box */
+  max-height: 200px;
   overflow-y: auto;
   z-index: 10;
+
+  /* Multi-column layout */
+  display: grid;
+  gap: 10px 14px;
+  grid-template-columns: repeat(4, minmax(160px, 1fr));
+
+  /* Float under the button */
+  position: absolute;
+  top: calc(100% + 10px);
+  left: 0;
+
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.35);
 }
 
+/* Wider screens can fit more columns */
+@media (min-width: 1400px) {
+  .dropdown-menu {
+    grid-template-columns: repeat(5, minmax(160px, 1fr));
+    width: min(95%, 95vw);
+  }
+}
+
+/* Laptops/tablets */
+@media (max-width: 1100px) {
+  .dropdown-menu {
+    grid-template-columns: repeat(3, minmax(160px, 1fr));
+    width: min(95%, 95vw);
+  }
+}
+
+@media (max-width: 850px) {
+  .dropdown-menu {
+    grid-template-columns: repeat(2, minmax(150px, 1fr));
+    width: min(95%, 95vw);
+  }
+}
+
+/* Phones */
+@media (max-width: 520px) {
+  .dropdown-menu {
+    grid-template-columns: 1fr;
+    width: min(95%, 95vw);
+  }
+}
+
+/* css for each labe in the dropdown menu */
 .dropdown-menu label {
   display: flex;
   align-items: center;
   gap: 8px;
-  margin-bottom: 8px;
-  font-size: 0.9rem;
+  margin: 0; /* grid handles spacing */
+  padding: 8px 10px;
+  border-radius: 8px;
   color: #bebebe;
+  font-size: 0.9rem;
+
+  min-width: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 
+/* css for the last item in a column */
 .dropdown-menu label:last-child {
   margin-bottom: 0;
 }
 
+/* css for the checkboxs for each tag */
 .dropdown-menu input[type="checkbox"] {
   width: 16px;
   height: 16px;
   cursor: pointer;
+  flex: 0 0 auto;
 }
 
-/* 9) Selected tag “chips” */
+/* css for the selected tags on the page */
 .selected-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
 }
 
+/* css for each tag chip on the page */
 .tag-chip {
   background-color: #1e1e1e;
   color: #bebebe;
@@ -160,6 +214,7 @@ Last to Update: Adam Wilkins
   gap: 6px;
 }
 
+/* css for the tag remove button */
 .tag-chip .remove {
   cursor: pointer;
   font-size: 1rem;
@@ -168,11 +223,12 @@ Last to Update: Adam Wilkins
   transition: color 0.2s;
 }
 
+/* css for the tag remove button hovering */
 .tag-chip .remove:hover {
   color: #f55;
 }
 
-/* 10) Grid for “All Projects” (same as before) */
+/* css for the all projects section */
 .project-grid {
   display: grid;
   gap: 20px;
@@ -181,11 +237,9 @@ Last to Update: Adam Wilkins
   margin-bottom: 40px;
 }
 
-/* ====================================== */
-/* ======  COMMON CARD STYLES  ========== */
-/* ====================================== */
 
-/* 11) Card container (real <button>) */
+
+/* css for the card button containers*/
 .project-card {
   all: unset;
   cursor: pointer;
@@ -200,26 +254,28 @@ Last to Update: Adam Wilkins
   transition: transform 0.2s;
 }
 
+/* css for the card button hovering */
 .project-card:hover,
 .project-card:focus {
   transform: scale(1.03);
   outline: none;
 }
 
-/* 12) Top image (16:9) */
+/* css for the image ontop of the card */
 .project-card img {
   width: 100%;
   aspect-ratio: 16 / 9;
   object-fit: cover;
 }
 
-/* 13) Footer with project name */
+/* css for the bottom of the card for the title*/
 .card-footer {
   padding: 10px 15px;
   background-color: #131313;
   text-align: center;
 }
 
+/* css for the card titles*/
 .project-title {
   margin: 0;
   font-size: 1rem;
