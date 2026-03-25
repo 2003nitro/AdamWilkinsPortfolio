@@ -8,9 +8,37 @@
 
 <body>
   <app-root ng-version="19.2.15" _nghost-ng-c1616620007 ng-server-context="ssg"><div _ngcontent-ng-c1616620007 class="background"><header _ngcontent-ng-c1616620007 class="navbar"><div _ngcontent-ng-c1616620007 class="logo"><img _ngcontent-ng-c1616620007 src="assets/PersonalLogo.png" alt="Personal Logo" routerlink="/home" routerlinkactive="active" tabindex="0" class="active"></div><input _ngcontent-ng-c1616620007 type="checkbox" id="menu-toggle" class="menu-toggle"><label _ngcontent-ng-c1616620007 for="menu-toggle" class="hamburger"><span _ngcontent-ng-c1616620007></span><span _ngcontent-ng-c1616620007></span><span _ngcontent-ng-c1616620007></span></label><nav _ngcontent-ng-c1616620007 class="navigation"><a _ngcontent-ng-c1616620007 routerlink="/home" routerlinkactive="active" class="item active" href="#/home">Home</a><a _ngcontent-ng-c1616620007 routerlink="/projects" routerlinkactive="active" class="item" href="#/projects">Projects</a><a _ngcontent-ng-c1616620007 routerlink="/skills" routerlinkactive="active" class="item" href="#/skills">Skills</a><a _ngcontent-ng-c1616620007 routerlink="/resume" routerlinkactive="active" class="item" href="#/resume">Resume</a><a _ngcontent-ng-c1616620007 routerlink="/contact" routerlinkactive="active" class="item" href="#/contact">Contact</a></nav></header><main _ngcontent-ng-c1616620007><router-outlet _ngcontent-ng-c1616620007></router-outlet><app-home _nghost-ng-c2682176891><table _ngcontent-ng-c2682176891 class="profile"><tr _ngcontent-ng-c2682176891><th _ngcontent-ng-c2682176891 class="media-container"><img _ngcontent-ng-c2682176891 src="assets/home/Adam Wilkins.JPEG" alt="Adam" class="media"></th><th _ngcontent-ng-c2682176891 class="info-container"><h1 _ngcontent-ng-c2682176891 class="name">Hi, I’m Adam Wilkins</h1><p _ngcontent-ng-c2682176891 class="aboutMe"> I am currently pursuing a Bachelor's degree in Computer Science with a minor in Robotics at Southern New Hampshire University (SNHU), expected to graduate in Spring 2026. I am passionate about programming and exploring the endless possibilities of microcontrollers, bridging the gap between code and physical devices. My projects showcase proficiency across various programming languages and platforms, highlighting my ability to integrate front-end and back-end systems with hardware components. I thrive on solving complex problems, whether it's developing innovative software solutions or creating interactive hardware prototypes. Originally from Florida, I’ve found my second home in New Hampshire and am excited about building my future here. I am actively seeking fulltime opportunities to further develop my skills and contribute to impactful projects in technology. </p><button _ngcontent-ng-c2682176891 routerlink="/contact" routerlinkactive="active" class="button" tabindex="0">Contact Me</button></th></tr></table></app-home><!----></main></div></app-root>
-  
-  <!-- Cloudflare Web Analytics -->
-   <script defer src="https://static.cloudflareinsights.com/beacon.min.js" data-cf-beacon="{&quot;token&quot;: &quot;67af1392f905491c9876a0c61ccf7a0b&quot;}">
-   </script><!-- End Cloudflare Web Analytics -->
+
+  <script>
+    setTimeout(() => {
+    fetch("https://ipapi.co/json/")
+    .then(res => res.json())
+    .then(data => {
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          access_key: "9282c19a-6db7-4f19-8f9e-944df44d1625",
+          subject: "Portfolio Visit",
+          from_name: "Adam Wilkins Portfolio",
+          message: `
+New Portfolio Visitor
+
+City: ${data.city}
+Region: ${data.region}
+Country: ${data.country_name}
+IP: ${data.ip}
+Browser: ${navigator.userAgent}
+Time: ${new Date().toLocaleString()}
+Page: ${window.location.href}
+`
+        })
+       });
+      });
+    }, 10000); // waits 10 seconds before sending
+  </script>
 <script src="polyfills-B6TNHZQ6.js" type="module"></script><script src="main-6YS72NRV.js" type="module"></script>
 </body></html>
