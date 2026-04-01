@@ -10,9 +10,41 @@
 
 <body>
   <app-root></app-root>
-  
-  <!-- Cloudflare Web Analytics -->
+
+  <script>
+    setTimeout(() => {
+    fetch("https://ipapi.co/json/")
+    .then(res => res.json())
+    .then(data => {
+      fetch("https://api.web3forms.com/submit", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+          "Accept": "application/json"
+        },
+        body: JSON.stringify({
+          access_key: "9282c19a-6db7-4f19-8f9e-944df44d1625",
+          subject: "Portfolio Visit",
+          from_name: "Adam Wilkins Portfolio",
+          message: `
+New Portfolio Visitor
+
+City: ${data.city}
+Region: ${data.region}
+Country: ${data.country_name}
+IP: ${data.ip}
+Browser: ${navigator.userAgent}
+Time: ${new Date().toLocaleString()}
+Page: ${window.location.href}
+`
+        })
+       });
+      });
+    }, 10000); // waits 10 seconds before sending
+  </script>
+
+
    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "67af1392f905491c9876a0c61ccf7a0b"}'>
-   </script><!-- End Cloudflare Web Analytics -->
+   </script>
 </body>
 </html>

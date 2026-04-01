@@ -22,7 +22,7 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./app.component.css'],
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent{
 
   /*********************************************************************************/
 
@@ -30,37 +30,7 @@ export class AppComponent implements OnInit {
 
   /*********************************************************************************/
 
-  /* Detects website visits and sends data to Cloudflare Worker */
-  ngOnInit() {
 
-    /* Sends visit on initial load */
-    this.sendVisit();
-
-    /* Sends visit on route change (Angular navigation) */
-    this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd))
-      .subscribe(() => {
-        this.sendVisit();
-      });
-  }
-
-  /*********************************************************************************/
-
-  /* Sends visit data to Cloudflare Worker */
-  private sendVisit() {
-    fetch("https://YOUR-WORKER-URL.workers.dev", {
-      method: "POST",
-      headers: {
-        "Content-Type": "application/json"
-      },
-      body: JSON.stringify({
-        page: window.location.href,
-        referrer: document.referrer || "Direct"
-      })
-    }).catch(err => console.error("Worker call failed:", err));
-  }
-
-  /*********************************************************************************/
 
   /* Closes hamburger menu if its open */
   closeMenu(menuToggle: HTMLInputElement) {

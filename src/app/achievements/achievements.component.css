@@ -1,55 +1,24 @@
 /**************************************************************
-File: skills.component.css
+File: achievements.component.css
 Author: Adam Wilkins
-Last Updated: 6/5/2025
+Last Updated: 3/31/2026
 Last to Update: Adam Wilkins
 ***************************************************************/
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
 
-:host {
-  display: block;
-  height: 100vh;
-  overflow-y: auto;
-  box-sizing: border-box;
-  padding-bottom: 10rem;
-}
-
-:root {
-  --bg-color: #121212;
-  --card-bg: #1f1f1f;
-  --accent-color: #1abc9c;
-  --text-color: #e0e0e0;
-  --subtext-color: #b3b3b3;
-  --border-radius: 8px;
-  --transition-speed: 0.3s;
-}
-
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-body {
-  font-family: 'Inter', sans-serif;
-  background-color: var(--bg-color);
-  color: var(--text-color);
-  line-height: 1.6;
-}
-
-.skills-page {
+.achievements-page {
   max-width: 1100px;
   margin: 0 auto;
   padding: 2rem 1rem;
 }
 
-.skills-header {
+.achievements-header {
   text-align: center;
   margin-bottom: 2rem;
 }
 
-.skills-header h1 {
+.achievements-header h1 {
   font-size: 2.8rem;
   font-weight: 700;
   letter-spacing: 1px;
@@ -57,18 +26,13 @@ body {
   color: #bebebe;
 }
 
-.skills-header p {
-  font-size: 1rem;
-  color: #818181;
-}
-
-.skills-grid {
+.achievements-grid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
 }
 
-.skill-card {
+.achievement-card {
   background-color: var(--card-bg);
   border-radius: var(--border-radius);
   padding: 1.5rem;
@@ -79,7 +43,7 @@ body {
   border: 1px solid transparent;
 }
 
-.skill-card:hover {
+.achievement-card:hover {
   transform: translateY(-5px);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
   border-color: var(--accent-color);
@@ -91,7 +55,7 @@ body {
   margin-bottom: 0.75rem;
   color: #bebebe;
   position: relative;
-  padding-bottom: 0.25rem;
+  padding-bottom: 0.1rem;
 }
 
 .card-header h2::after {
@@ -105,19 +69,39 @@ body {
   border-radius: 2px;
 }
 
-.skill-card ul {
+.card-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+  color: #bebebe;
+  position: relative;
+  padding-bottom: 0.1rem;
+}
+
+.card-header h3::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 40px;
+  height: 3px;
+  background: var(--accent-color);
+  border-radius: 2px;
+}
+
+.achievement-card ul {
   list-style: none;
   margin-top: 0.5rem;
 }
 
-.skill-card ul li {
+.achievement-card ul li {
   padding: 0.4rem 0;
-  font-size: 0.95rem;
+  font-size: 1.25rem;
   color: #818181;
   position: relative;
 }
 
-.skill-card ul li::before {
+.achievement-card ul li::before {
   content: '•';
   position: absolute;
   left: -1.2rem;
@@ -125,46 +109,4 @@ body {
   font-size: 1.1rem;
   top: 50%;
   transform: translateY(-50%);
-}
-
-.wide-card {
-  grid-column: span 2;
-}
-
-@media (max-width: 768px) {
-  .wide-card {
-    grid-column: span 1;
-  }
-}
-
-.coursework-columns {
-  display: flex;
-  gap: 2rem;
-  margin-top: 0.5rem;
-}
-
-.coursework-columns ul {
-  flex: 1;
-  list-style-type: disc;
-  list-style-position: inside;
-  margin: 0;
-  padding-left: 1rem;
-}
-
-.coursework-columns ul li {
-  padding: 0.4rem 0;
-  font-size: 0.95rem;
-  color: #818181;
-  position: static;
-}
-
-@media (max-width: 768px) {
-  .coursework-columns {
-    flex-direction: column;
-    gap: 1rem;
-  }
-}
-
-.soft-skills-list li {
-  line-height: 1.4;
 }
