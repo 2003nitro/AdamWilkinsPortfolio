@@ -6,6 +6,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { ContactComponent } from './contact/contact.component';
 import { ProjectTempComponent } from './project-temp/project-temp.component';
 import { ResumeComponent } from './resume/resume.component';
+import { AchievementsComponent } from './achievements/achievements.component';
 
 export const routes: Routes = [
   { path:   '',      redirectTo:'home', pathMatch:'full' },
@@ -15,5 +16,6 @@ export const routes: Routes = [
   { path: 'contact', component: ContactComponent },
   { path: 'project-temp', component: ProjectTempComponent },
   { path: 'resume', component: ResumeComponent },
+  { path: 'achievements', component: AchievementsComponent },
   { path:   '**',    redirectTo: 'home' }
 ];

@@ -29,7 +29,7 @@
     "GitHub Repository": "https://github.com/2003nitro/GuitarV1Code.git",
     "3D Model on Printables": "https://www.printables.com/model/227781-poly-clone-hero-controller"
   },
-  "featured": true,
+  "featured": false,
   "tags": [
     "3d Printing",
     "Arduino",

@@ -30,7 +30,7 @@
     "Arduino Mega Documentation": "https://docs.arduino.cc/hardware/mega-2560/",
     "PixyCam2 Documentation": "https://docs.pixycam.com/wiki/doku.php?id=wiki:v2:start"
   },
-  "featured": true,
+  "featured": false,
   "tags": [
     "Arduino",
     "C++",

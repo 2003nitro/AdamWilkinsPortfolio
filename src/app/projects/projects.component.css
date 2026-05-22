@@ -42,7 +42,7 @@ Last to Update: Adam Wilkins
 .showcase-grid {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(4, minmax(0, 1fr)); /* up to 4 per row */
+  grid-template-columns: repeat(3, minmax(0, 1fr)); /* up to 4 per row */
   justify-items: stretch;
 }
 

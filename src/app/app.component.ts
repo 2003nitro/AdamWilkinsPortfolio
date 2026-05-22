@@ -22,7 +22,7 @@ import { filter } from 'rxjs/operators';
   styleUrls: ['./app.component.css'],
 })
 
-export class AppComponent implements OnInit {
+export class AppComponent{
 
   /*********************************************************************************/
 
@@ -30,21 +30,6 @@ export class AppComponent implements OnInit {
 
   /*********************************************************************************/
 
-  /* Detects website visits and sends data to Cloudflare Worker */
-  ngOnInit() {
-
-    /* Sends visit on initial load */
-    this.sendVisit();
-
-    /* Sends visit on route change (Angular navigation) */
-    this.router.events
-      .pipe(filter(event => event instanceof NavigationEnd))
-      .subscribe(() => {
-        this.sendVisit();
-      });
-  }
-
-  /*********************************************************************************/
 
   /* Sends visit data to Cloudflare Worker */
   private sendVisit() {
