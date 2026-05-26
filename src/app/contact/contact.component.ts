@@ -19,7 +19,7 @@ export class ContactComponent {
   contactName: string       = 'Adam Wilkins';
   contactEmail: string      = 'adamwilkins012@gmail.com';
   contactPhone: string      = '+1 (727) 267-9988';
-  contactAddress: string    = '2500 North River Rd, Manchester, New Hampshire, 03106';
+  contactAddress: string    = '136 Central St, North Reading, Massachusetts, 01864';
 
   /*********************************************************************************/
   // Output: phone link

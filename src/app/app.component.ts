@@ -33,7 +33,7 @@ export class AppComponent{
 
   /* Sends visit data to Cloudflare Worker */
   private sendVisit() {
-    /*fetch("https://YOUR-WORKER-URL.workers.dev", {
+    fetch("https://YOUR-WORKER-URL.workers.dev", {
       method: "POST",
       headers: {
         "Content-Type": "application/json"
@@ -42,7 +42,7 @@ export class AppComponent{
         page: window.location.href,
         referrer: document.referrer || "Direct"
       })
-    }).catch(err => console.error("Worker call failed:", err));*/
+    }).catch(err => console.error("Worker call failed:", err));
   }
 
   /*********************************************************************************/
