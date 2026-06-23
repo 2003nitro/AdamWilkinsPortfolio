@@ -1,0 +1,32 @@
+name: Build and Deploy Portfolio
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout main branch
+        uses: actions/checkout@v4
+
+      - name: Set up Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: '20'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Build Portfolio
+        run: npx ng build --configuration=production --base-href="/AdamWilkinsPortfolio/"
+
+      - name: Deploy Portfolio
+        run: npx angular-cli-ghpages --dir=dist/AdamWilkinsPortfolio/browser --branch=gh-pages --name="github-actions[bot]" --email="github-actions[bot]@users.noreply.github.com"
