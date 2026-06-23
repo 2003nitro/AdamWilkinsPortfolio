@@ -5,7 +5,7 @@ Last Updated: 6/2/2025
 Last to Update: Adam Wilkins
 ***************************************************************/
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { Router } from '@angular/router';
 
@@ -24,7 +24,9 @@ interface ProjectData {
   styleUrl: './projects.component.css'
 })
 export class ProjectsComponent implements OnInit {
-  constructor(private readonly router: Router) {}
+  constructor(
+    private readonly router: Router,
+    private readonly cdr: ChangeDetectorRef) {}
 
   allProjects: Array<{ name: string; image: string; path: string; featured: boolean; tags: string[] }> = [];
   featuredProjects: Array<{ name: string; image: string; path: string; featured: boolean; tags: string[] }> = [];
@@ -68,6 +70,7 @@ export class ProjectsComponent implements OnInit {
       });
 
       this.allTags = Array.from(tagSet).sort();
+      this.cdr.detectChanges(); // Trigger change detection after loading projects
 
     } catch (err) {
       console.error('Error loading projects:', err);

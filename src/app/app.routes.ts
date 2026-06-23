@@ -17,5 +17,5 @@ export const routes: Routes = [
   { path: 'project-temp', component: ProjectTempComponent },
   { path: 'resume', component: ResumeComponent },
   { path: 'achievements', component: AchievementsComponent },
-  { path:   '**',    redirectTo: 'home' }
+  { path:   '**',    redirectTo: 'home', pathMatch: 'full'}
 ];

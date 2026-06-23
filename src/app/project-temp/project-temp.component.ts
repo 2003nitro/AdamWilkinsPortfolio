@@ -5,7 +5,7 @@ Last Updated: 1/17/2026
 Last to Update: Adam Wilkins
 ***************************************************************/
 
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ChangeDetectorRef } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ActivatedRoute } from '@angular/router';
 
@@ -20,7 +20,10 @@ export class ProjectTempComponent implements OnInit {
   ProjectData: any = null;
   current = 0;  // which slide is showing
 
-  constructor(private readonly route: ActivatedRoute) {}
+  constructor(
+    private readonly route: ActivatedRoute,
+    private readonly cdr: ChangeDetectorRef
+  ) {}
 
   /*********************************************************************************/
   /* Sets project data to data after finding the path */
@@ -31,7 +34,11 @@ export class ProjectTempComponent implements OnInit {
 
       fetch(src)
         .then(r => r.json())
-        .then(data => this.ProjectData = data)
+        .then(data => {
+          this.ProjectData = data;
+          this.current = 0;
+          this.cdr.detectChanges();
+        })
         .catch(err => console.error(err));
     });
   }
