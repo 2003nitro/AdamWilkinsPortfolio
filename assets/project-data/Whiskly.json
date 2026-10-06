@@ -1,0 +1,37 @@
+{
+  "name": "Whiskly",
+  "start_date": "September 28th 2026",
+  "end_date": "Present",
+  "revisited_date": "",
+  "revisited_desctiption": "",
+  "status": "In Progress",
+  "overview": "Whiskly is an ongoing personal project I started to create a recipe book tailored to how I like to store, organize, and use recipes while cooking. I am developing the website using Angular with Supabase providing the online database used to store recipe information. Beyond creating something I can use myself, this project is giving me an opportunity to continue developing my full-stack web development skills while working with databases, external APIs, dynamic data, and interactive user interfaces. I am developing the project incrementally, starting with the core recipe browsing and cooking features before expanding it with search, nutritional information, serving adjustments, conversions, meal planning, and other tools.",
+  "description": "Whiskly is a web-based recipe book built with Angular and connected to a Supabase database. The home page organizes recipes into categories, with each category displaying recipe cards containing information such as the recipe name, rating, total preparation time, and number of servings. Selecting a recipe opens a dedicated page containing its ingredients and instructions. Ingredients include interactive checkboxes that allow me to mark off items while cooking, along with a clear-all option that resets the list. Individual instruction steps can also be selected to turn them green as they are completed and selected again to undo the change, with a separate clear-all option for resetting the instructions. The project is designed to eventually provide more than basic recipe storage by incorporating tools that make finding recipes, preparing meals, and shopping for ingredients easier.",
+  "what_i_learned": "So far, this project has helped me expand my experience with Angular while learning how to integrate a web application with Supabase and an online database. I am gaining more experience designing database structures for recipe information and retrieving that data to dynamically generate categories, recipe cards, ingredients, and instructions within the application. I am also learning more about designing interactive interfaces through features such as ingredient checklists and selectable instruction steps. As development continues, I am beginning to explore working with external APIs through the USDA FoodData Central API, including how ingredient information can be matched with nutritional data and eventually used to calculate nutrition facts for an entire recipe.",
+  "challenges": "One of the main challenges with this project has been determining how to structure recipe data so that it remains organized while supporting the additional features I want to add in the future. Recipes contain several related types of information, including categories, ingredients, quantities, units, instructions, ratings, servings, and eventually tags and nutritional data, so I have had to consider how these pieces should be stored and accessed through Supabase. Another ongoing challenge is integrating USDA nutritional data because an ingredient entered into a recipe does not always directly correspond to a single result from the USDA database. This requires determining how ingredients should be matched to appropriate foods while keeping the process accurate and manageable. As I continue developing Whiskly, I expect to refine these systems as additional features begin interacting with the same recipe data.",
+  "planned_features": "Planned features include searching and filtering recipes by name, tags, and rating; automatically generating nutritional information using data from the USDA FoodData Central API; adding images to recipe cards and individual recipe pages; creating a custom Whiskly logo; and adding a serving multiplier that automatically adjusts ingredient quantities when making larger or smaller portions. I also plan to add a measurement conversion tool for common cooking conversions, such as cups to tablespoons. Another feature I am considering is a meal planner that would allow multiple recipes to be selected and combine their ingredients into a single shopping list, making it easier to check what I already have and determine the quantities I need to purchase.",
+  "cover_image": "assets/project-images/Whiskly-Images/Image1.png",
+  "images": [
+    {
+      "title": "Category Page",
+      "path":"assets/project-images/Whiskly-Images/Image2.png"
+    },
+    {
+      "title": "Recipe Page",
+      "path":"assets/project-images/Whiskly-Images/Image3.png"
+    }
+  ],
+  "resources": {
+    "GitHub Repository": "https://github.com/2003nitro/Whiskly",
+    "Angular Documentation": "https://angular.dev/overview"
+  },
+  "featured": true,
+  "tags": [
+    "HTML",
+    "CSS",
+    "TypeScript",
+    "Angular",
+    "Software",
+    "SQL"
+  ]
+}
