@@ -172,6 +172,20 @@ Last to Update: Adam Wilkins
         <!-- ************************************************************************* -->
 
         <!-- ************************************************************************* -->
+         <!-- Planned Features Section -->
+        <section
+          class="section-block"
+          *ngIf="ProjectData.planned_features && ProjectData.planned_features !== ''"
+          >
+
+          <h2 class="text">Planned Features</h2>
+
+          <p class="text">{{ ProjectData.planned_features }}</p>
+
+        </section>
+        <!-- ************************************************************************* -->
+
+        <!-- ************************************************************************* -->
          <!-- Challenges Section -->
         <section
           class="section-block"
